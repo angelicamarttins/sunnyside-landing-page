@@ -1,0 +1,29 @@
+.title-container {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    left: 0;
+    z-index: 1;
+
+    &__title {
+        text-align: center;
+        z-index: 2;
+        padding-bottom: 1.5em;
+        font: {
+            weight: bolder;
+            size: 2.25rem;
+            family: 'Fraunces', serif;
+        };
+        letter-spacing: 6px;
+        color: #fff;
+        text-transform: uppercase;
+        
+    }
+    
+    &__arrow-down {
+        display: block;
+        margin: auto;
+        z-index: 3;
+    }
+
+}
