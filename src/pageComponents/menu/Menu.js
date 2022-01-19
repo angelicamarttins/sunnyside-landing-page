@@ -1,7 +1,8 @@
 import React from 'react';
 
-// Import images
-import Logo from '../assets/images/icons/logo.svg'
+// Import styles
+import './Menu.scss';
+
 
 function Menu() {
     return (
