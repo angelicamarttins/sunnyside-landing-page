@@ -1,6 +1,6 @@
 import React from "react";
 
-// Import css
+// Import style
 import '../assets/scss/DinamicImg.scss'
 
 
