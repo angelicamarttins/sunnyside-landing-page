@@ -1,3 +1,4 @@
+// General settings
 * {
     margin: 0;
     padding: 0;
@@ -5,4 +6,8 @@
     font-size: 18px;
 }
 
+// Import media query
+@import url(mediaQuery.scss);
+
+// Import fonts
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');

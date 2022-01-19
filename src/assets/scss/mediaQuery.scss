@@ -1,0 +1,53 @@
+@import url(Header.scss);
+
+@media (min-width: 470px) {
+    .title-container {
+        &__title {
+            font-size: 3rem;
+        }
+        &__arrow-down {
+            height: 150px;
+        }
+    };
+};
+
+@media (min-width: 600px) {
+    .title-container {
+        &__title {
+            font-size: 3.5rem;
+        }
+        &__arrow-down {
+            height: 200px;
+        }
+    };
+};
+
+@media (min-width: 750px) {
+    .title-container {
+        top: 30%;
+        &__title {
+            font-size: 4rem;
+        };
+    }
+};
+
+@media (min-width: 855px) {
+    .title-container {
+        top: 40%;
+        &__title {
+            font-size: 4rem;
+        };
+    }
+};
+
+@media (min-width: 1000px) {
+    .title-container {
+        top: 55%;
+    }
+};
+
+@media (min-width: 1150px) {
+    .title-container {
+        top: 65%;
+    }
+};

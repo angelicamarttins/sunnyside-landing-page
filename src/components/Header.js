@@ -16,11 +16,12 @@ function Header(props) {
     return (
     <header className='header'>
 
-        <div className='header__test'>
-            <h1 className='header__title'>WE ARE CREATERS</h1>
-            <img className='header__arrow-down' src={ArrowDown} />
+        <div className='title-container'>
+            <h1 className='title-container__title'>we are creatives</h1>
+            <img className='title-container__arrow-down' src={ArrowDown} />
         </div>
-        <DinamicImg className='header__dinamic-img' media="(min-width: 1440px)" srcset={HeaderImgDesk} src={HeaderImgMob} />
+
+        <DinamicImg media="(min-width: 1440px)" srcset={HeaderImgDesk} src={HeaderImgMob} />
 
     </header>
 )
