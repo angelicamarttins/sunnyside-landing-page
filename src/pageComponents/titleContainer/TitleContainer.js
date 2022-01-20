@@ -1,7 +1,9 @@
 import React from "react";
+ // Import style
+import './TitleContainer.scss';
 
 function TitleContainer(props) {
-
+    return (
     <div className='title-container'>
 
         <h1 className='title-container__title'>we are creatives</h1>
@@ -9,7 +11,7 @@ function TitleContainer(props) {
         <img className='title-container__arrow-down' src={props.src} />
         
     </div>
-
+    )
 }
 
 export default TitleContainer;

@@ -1,0 +1,16 @@
+import React from "react";
+
+// Import styles
+import './LearnMore.scss';
+
+function LearnMore(props) {
+    return (
+    <div className="learn-more">
+        
+        <a className="learn-more__link" href={props.href} target={props.target} rel={props.rel}>learn more</a>
+        
+    </div>
+    )
+};
+
+export default LearnMore;

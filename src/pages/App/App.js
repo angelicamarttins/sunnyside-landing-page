@@ -1,11 +1,13 @@
 import React from 'react';
-import '../assets/scss/App.scss';
-import Header from './Header.js';
-
+//import '../assets/scss/App.scss';
+import LearnMore from '../../components/LearnMore/LearnMore';
+import TitleContainer from '../../pageComponents/titleContainer/TitleContainer.js'
 
 function App() {
   return (
-    <Header />
+    //<TitleContainer />
+
+    <LearnMore href="https://google.com.br" target="_blank" rel="author"/>
   )
 };  
 
