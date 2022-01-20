@@ -1,8 +1,32 @@
+@import '../../assets/styles/variables.scss';
+
 .learn-more {
     &__link {
+        position: relative;
         text-decoration: none;
-        font-size: 3rem;
+        text-transform: uppercase;
+        color: $mainTitleNameTesti;
+        font: {
+            family: $titleFont;
+            weight: 900;
+            size: 1.5rem;
+        };
         
-        color:  hsl(210, 4%, 67%);
+        &::before {
+            content: "";
+            position: absolute;
+            top: 65%;
+            left: -6%;
+            width: 115%;
+            height: 0.7rem;
+            background: $yellowBorder;
+            z-index: -1;
+            border-radius: 0.5rem;
+            transition: 0.35s;
+        }
+
+        &:hover::before {
+            background: $yellowHover;
+        }
     }
 }
