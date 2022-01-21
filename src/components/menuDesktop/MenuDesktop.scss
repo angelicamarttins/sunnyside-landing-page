@@ -1,0 +1,18 @@
+.menu-desktop {
+
+    &__list{
+        border: 2px solid black;
+        list-style-type: none;
+
+    }
+    &__item {
+
+        border: 2px solid red;
+    }
+    &__link {
+        text-decoration: none;
+        cursor: pointer;
+        border: 2px solid green;
+    }
+    
+}
