@@ -1,17 +1,13 @@
 import React from 'react';
 //import '../assets/scss/App.scss';
-import LearnMore from '../../components/LearnMore/LearnMore';
+import LogoImgWhite from '../../assets/images/icons/logoWhite.svg'
+import LogoImgGreen from '../../assets/images/icons/logoGreen.svg'
+import Logo from '../../components/logo/Logo'
 
 
 function App() {
   return (
-    <header>
 
-      <LearnMore className="learn-more__link--red" href="https://google.com.br" target="_blank" rel="author" />
-      
-      <LearnMore className="learn-more__link--yellow" href="https://google.com.br" target="_blank" rel="author" />
-
-    </header>
   )
 };  
 

@@ -1,6 +1,7 @@
-// Import other styles
+// Import variables
 @import '../../assets/styles/variables.scss';
 
+// Define reuseable code
 @mixin borderHoverColor($colorBorder, $colorHover) {
     position: relative;
     text-decoration: none;
@@ -29,6 +30,8 @@
         background: $colorHover;
     }
 };
+
+// Style component
 
 .learn-more {
     &__link--red {
