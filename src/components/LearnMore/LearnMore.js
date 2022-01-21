@@ -4,11 +4,12 @@ import React from "react";
 import './LearnMore.scss';
 
 function LearnMore(props) {
+    console.log(props.className)
     return (
     <div className="learn-more">
         
-        <a className="learn-more__link" href={props.href} target={props.target} rel={props.rel}>learn more</a>
-        
+        <a className={props.className} href={props.href} target={props.target} rel={props.rel}>learn more</a>
+            
     </div>
     )
 };
