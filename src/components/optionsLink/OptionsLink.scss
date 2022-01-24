@@ -1,0 +1,43 @@
+// Import variables
+@import '../../assets/styles/variables';
+
+.options-link {
+    &__list{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    };
+    
+    &__link {
+        text-decoration: none;
+        text-transform: capitalize;
+        font: {
+            family: $textFont;
+        };
+        color: $white;
+        padding: 1.5rem;
+        cursor: pointer;
+        &:hover {
+            color: $whiteHover;
+        };
+        
+        &--principal {
+            text-transform: uppercase;
+            font: {
+                family: $titleFont;
+            };
+            background-color: $white;
+            color: $mainTitleNameTesti;
+            border-radius: 30px;
+            padding: 1.05rem 1.5rem;
+
+            &:hover {
+                background-color: $whiteHover;
+                color: $white;
+            };
+
+        }
+    };
+    
+}

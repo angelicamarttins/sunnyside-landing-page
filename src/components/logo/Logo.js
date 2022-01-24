@@ -4,11 +4,10 @@ import React from "react";
 import './Logo.scss';
 
 function Logo(props) {
-  console.log(props.fill);
     return(
+      
       <div>
-
-        <img className='logo' src={props.src} />
+        <img className='logo' src={props.src} alt={props.alt} />
       </div>
       
     )

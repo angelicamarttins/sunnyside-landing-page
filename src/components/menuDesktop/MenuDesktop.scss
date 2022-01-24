@@ -2,41 +2,10 @@
 @import '../../assets/styles/variables';
 
 .menu-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    &__list{
-        list-style-type: none;
-        padding: 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    };
-
-    &__link {
-        text-decoration: none;
-        text-transform: capitalize;
-        font: {
-            family: $textFont;
-        };
-        color: $white;
-        padding: 10px;
-        cursor: pointer;
-
-        &--principal {
-            text-transform: uppercase;
-            font: {
-                family: $titleFont;
-            };
-            background-color: $white;
-            color: $mainTitleNameTesti;
-            border-radius: 30px;
-            padding: 1.05rem 1.5rem;
-
-            &:hover {
-                background-color: $whiteHover;
-                color: $white;
-            };
-
-        }
-    };
-    
+    padding: 0.5rem;
+    margin: 1.5rem;
 }
