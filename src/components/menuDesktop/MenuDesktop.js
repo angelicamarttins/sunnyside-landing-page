@@ -11,13 +11,13 @@ function MenuDesktop(props) {
                     <a className="menu-desktop__link" href={props.href} target={props.target} rel={props.rel}>About</a>
                 </li>
                 <li className="menu-desktop__item">
-                    <a className="menu-desktop__link" href={props.href} target={props.target} rel={props.rel}>Services</a>
+                    <a className="menu-desktop__link" href={props.href} target={props.target} rel={props.rel}>services</a>
                 </li>
                 <li className="menu-desktop__item">
-                    <a className="menu-desktop__link" href={props.href} target={props.target} rel={props.rel}>Projects</a>
+                    <a className="menu-desktop__link" href={props.href} target={props.target} rel={props.rel}>projects</a>
                 </li>
                 <li className="menu-desktop__item">
-                    <a className="menu-desktop__link" href={props.href} target={props.target} rel={props.rel}>Contacts</a>
+                    <a className="menu-desktop__link menu-desktop__link--principal" href={props.href} target={props.target} rel={props.rel}>contact</a>
                 </li>
             </ul>
         </div>

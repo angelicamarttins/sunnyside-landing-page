@@ -1,18 +1,48 @@
+// Import variables
+@import '../../assets/styles/variables';
+
 .menu-desktop {
 
     &__list{
-        border: 2px solid black;
         list-style-type: none;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $bgMenu;
+    };
 
-    }
-    &__item {
+    // &__item {
 
-        border: 2px solid red;
-    }
+    //     border: 2px solid red;
+    // };
+
     &__link {
         text-decoration: none;
+        text-transform: capitalize;
+        font: {
+            family: $textFont;
+        };
+        color: $white;
+        padding: 10px;
         cursor: pointer;
-        border: 2px solid green;
-    }
+
+        &--principal {
+            text-transform: uppercase;
+            font: {
+                family: $titleFont;
+            };
+            background-color: $white;
+            color: $mainTitleNameTesti;
+            border-radius: 30px;
+            padding: 1.05rem 1.5rem;
+
+            &:hover {
+                background-color: $whiteHover;
+                color: $white;
+            };
+
+        }
+    };
     
 }
