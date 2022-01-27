@@ -8,10 +8,10 @@
 
 @import '../src/assets/styles/variables.scss';
 
-body {
-    // max-width: 100%;
-    background-color: $bgMenu;
-}
 // Import media query
-@import url(./pages/mediaquery/mediaQuery.scss);
-// @import url(Menu.scss);
+@import './pages/mediaquery/mediaQuery.scss';
+
+
+body {
+    background-color: black;
+}

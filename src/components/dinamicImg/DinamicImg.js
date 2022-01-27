@@ -1,7 +1,7 @@
 import React from "react";
 
 // Import style
-import '../assets/scss/DinamicImg.scss'
+import './DinamicImg.scss'
 
 
 function DinamicImg(props) {
@@ -10,9 +10,9 @@ function DinamicImg(props) {
             
             <picture className="dinamic-img__picture">
 
-            <source className="picture__src" media={props.media} srcSet={props.srcset} />
+            <source className="picture__src" media={props.media} srcSet={props.srcset} alt={props.alt} />
 
-            <img className="picture__img" src={props.src} />
+            <img className="picture__img" src={props.src} alt={props.alt} />
 
             </picture>
     

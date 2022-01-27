@@ -1,14 +1,14 @@
-import React from 'react';
-import './App.scss';
-import MenuDesktop from '../../components/menuDesktop/MenuDesktop'
+import React from "react";
+import "./App.scss";
+import Header from "../../pageComponents/header/Header";
 
 function App() {
   return (
     <header>
-      <MenuDesktop />
+      <Header />
+    
     </header>
-
-  )
-};  
+  );
+}
 
 export default App;

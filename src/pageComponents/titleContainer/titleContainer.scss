@@ -1,3 +1,6 @@
+// Import variables
+@import '../../assets/styles/variables';
+
 .title-container {
     position: absolute;
     top: 25%;
@@ -18,13 +21,14 @@
         color: #fff;
         text-transform: uppercase;
 
-        color: hsl(210, 9%, 39%);
+        color: #fff;
     }
     
     &__arrow-down {
         display: block;
         margin: auto;
         z-index: 3;
+        // margin-top: 10em;
     }
 
 }

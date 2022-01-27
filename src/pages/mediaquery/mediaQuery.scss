@@ -1,3 +1,6 @@
+// Import variables
+@import '../../assets/styles/variables';
+
 @media (min-width: 470px) {
     .title-container {
         &__title {
@@ -45,7 +48,23 @@
 };
 
 @media (min-width: 1150px) {
+    
     .title-container {
         top: 65%;
+        padding: 2rem;
+        &__title {
+            font-size: 5rem;
+        }
+    }
+};
+
+@media (min-width: 1600px) {
+    
+    .title-container {
+        top: 70%;
+        padding: 2rem;
+        &__title {
+            font-size: 8rem;
+        }
     }
 };
