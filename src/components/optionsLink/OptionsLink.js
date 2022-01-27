@@ -5,19 +5,19 @@ import './OptionsLink.scss';
 
 function OptionsLink(props) {
     return (
-        <div className="options-link">
-            <ul className="options-link__list">
-                <li className="options-link__item">
-                    <a className="options-link__link" href={props.href.about} target={props.target} rel={props.rel}>about</a>
+        <div className="op-link">
+            <ul className={props.className.list}>
+                <li className={props.className.item}>
+                    <a className={props.className.link} href={props.href.about} target={props.target} rel={props.rel}>about</a>
                 </li>
-                <li className="options-link__item">
-                    <a className="options-link__link" href={props.href.services} target={props.target} rel={props.rel}>services</a>
+                <li className="op-link__item">
+                    <a className={props.className.link} href={props.href.services} target={props.target} rel={props.rel}>services</a>
                 </li>
-                <li className="options-link__item">
-                    <a className="options-link__link" href={props.href.projects} target={props.target} rel={props.rel}>projects</a>
+                <li className="op-link__item">
+                    <a className={props.className.link} href={props.href.projects} target={props.target} rel={props.rel}>projects</a>
                 </li>
-                <li className="options-link__item">
-                    <a className="options-link__link options-link__link--principal" href={props.href.contact} target={props.target} rel={props.rel}>contact</a>
+                <li className="op-link__item">
+                    <a className={props.className.contact} href={props.href.contact} target={props.target} rel={props.rel}>contact</a>
                 </li>
             </ul>
         </div>

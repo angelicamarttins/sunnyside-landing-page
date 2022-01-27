@@ -1,13 +1,13 @@
 // Import variables
 @import '../../assets/styles/variables';
 
-.options-link {
-    &__list{
-        list-style-type: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    };
+// Define reuseable code
+@mixin menuColor($colorOption, $colorOptionHover, $colorContactBg, $colorContact, $colorContactHover, $colorContactHoverBg) {
+    
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
     &__link {
         text-decoration: none;
@@ -15,30 +15,42 @@
         font: {
             family: $textFont;
         };
-        color: $white;
+        color: $colorOption;
         padding: 1.5rem;
         cursor: pointer;
         &:hover {
-            color: $whiteHover;
+            color: $colorOptionHover;
         };
         
-        &--principal {
+        &--contact {
             text-transform: uppercase;
             font: {
                 family: $titleFont;
                 weight: 900;
             };
-            background-color: $white;
+            background-color: $colorContactBg;
             color: $mainTitleNameTesti;
             border-radius: 30px;
             padding: 1.05rem 1.5rem;
 
             &:hover {
-                background-color: $whiteHover;
-                color: $white;
+                background-color: $colorContactHoverBg;
+                color: $colorContactHover;
             };
 
         }
     };
+}
+
+.op-link {
+    &__list-d {
+        @include menuColor($mainText, $mainTextHover, $yellowBorder, $mainTitleNameTesti, $white, $yellowHover)
+    }
     
+    &__list-m {
+        flex-direction: column;
+        gap: 2rem;
+
+        @include menuColor($mainText, $mainTextHover, $yellowHover, $mainTitleNameTesti, $mainTitleNameTesti, $yellowBorder)
+    }
 }

@@ -4,7 +4,7 @@ import React from "react";
 import './LearnMore.scss';
 
 function LearnMore(props) {
-    console.log(props.className)
+
     return (
     <div className="learn-more">
         
