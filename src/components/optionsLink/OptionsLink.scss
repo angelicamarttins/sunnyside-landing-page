@@ -44,7 +44,7 @@
 
 .op-link {
     &__list-d {
-        @include menuColor($mainText, $mainTextHover, $yellowBorder, $mainTitleNameTesti, $white, $yellowHover)
+        @include menuColor($white, $whiteHover, $white, $mainTitleNameTesti, $white, $whiteHover)
     }
     
     &__list-m {

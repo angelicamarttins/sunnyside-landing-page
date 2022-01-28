@@ -7,7 +7,8 @@ import './MenuMobile.scss';
 import OptionsLink from "../optionsLink/OptionsLink";
 import Logo from '../logo/Logo'
 //Import images
-import GreenLogo from '../../assets/images/icons/logoGreen.svg'
+import WhiteLogo from '../../assets/images/icons/logoWhite.svg'
+import Hamburger from '../../assets/images/icons/icon-hamburger.svg'
 
 function MenuMobile(props) {
     const hrefObj = {
@@ -33,9 +34,16 @@ function MenuMobile(props) {
 
     return (
         <div className="menu-mobile">
-            <Logo src={GreenLogo}/> 
+            <div className="menu-mobile__nav">
+                <Logo src={WhiteLogo}/>
+                
+                <img className="menu-mobile__nav--hamb" src={Hamburger} alt=""/>
+                
+                <div className="menu-mobile__nav--box">
 
-            <OptionsLink className={classNameMobile} href={hrefObj} target='_blank' rel="external" />
+                <OptionsLink className={classNameMobile} href={hrefObj} target='_blank' rel="external" />
+                </div>
+            </div>
         </div>
     )
     };
