@@ -16,7 +16,7 @@ const hrefObj = {
   contact: "https://linkedin.com/in/marttinsangelica",
 };
 
-function MenuDesktop(props) {
+const MenuDesktop = (props) => {
   return (
     <div>
       <div className="menu-desktop">

@@ -1,6 +1,6 @@
 import "./LearnMore.scss";
 
-function LearnMore(props) {
+const LearnMore = (props) => {
   return (
     <div className="learn-more">
       <a

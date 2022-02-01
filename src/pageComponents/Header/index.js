@@ -2,7 +2,7 @@ import "./Header.scss";
 
 import MenuMobile from "../../components/MenuMobile";
 
-function Header() {
+const Header = (props) => {
   return (
     <div className="header">
       <MenuMobile />

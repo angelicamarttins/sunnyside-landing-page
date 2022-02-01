@@ -1,6 +1,6 @@
 import "./DinamicImg.scss";
 
-function DinamicImg(props) {
+const DinamicImg = (props) => {
   return (
     <div className="dinamic-img">
       <picture className="dinamic-img__picture">

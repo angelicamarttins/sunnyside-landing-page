@@ -6,7 +6,7 @@ import Logo from "../Logo";
 import WhiteLogo from "../../assets/images/icons/logoWhite.svg";
 import Hamburger from "../../assets/images/icons/icon-hamburger.svg";
 
-function MenuMobile(props) {
+const MenuMobile = (props) => {
   const hrefObj = {
     about: "https://linkedin.com/in/marttinsangelica",
     services: "https://angelicamarttins.github.io/portfolio/",
@@ -46,6 +46,6 @@ function MenuMobile(props) {
       </div>
     </div>
   );
-}
+};
 
 export default MenuMobile;

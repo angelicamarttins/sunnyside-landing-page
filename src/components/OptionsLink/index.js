@@ -1,6 +1,6 @@
 import "./OptionsLink.scss";
 
-function OptionsLink(props) {
+const OptionsLink = (props) => {
   return (
     <div className="op-link">
       <ul className={props.className.list}>

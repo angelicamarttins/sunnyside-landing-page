@@ -1,6 +1,6 @@
 import "./Logo.scss";
 
-function Logo(props) {
+const Logo = (props) => {
   return (
     <div>
       <img className="logo" src={props.src} alt={props.alt} />
