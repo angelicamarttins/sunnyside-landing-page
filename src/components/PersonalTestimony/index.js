@@ -1,3 +1,5 @@
-import './PersonalTestimony.scss';
+import "./PersonalTestimony.scss";
+
+const PersonalTestimony = (props) => {};
 
 export default PersonalTestimony;

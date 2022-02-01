@@ -1,24 +1,23 @@
-@import '../../assets/styles/variables';
+@import "../../assets/styles/variables";
 
 .menu-mobile {
-    
-    &__nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 1.5rem;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem;
 
-        &--box {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 13%;
-            //display: none;
-            width: 90%;
-            max-width: 450px;
-            margin: auto;
-            padding: 2.5rem;
-            background-color: $white;
-        }
+    &--box {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 13%;
+      //display: none;
+      width: 90%;
+      max-width: 450px;
+      margin: auto;
+      padding: 2.5rem;
+      background-color: $white;
     }
+  }
 }

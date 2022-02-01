@@ -1,3 +1,5 @@
-import './Footer.scss';
+import "./Footer.scss";
+
+const Footer = (props) => {};
 
 export default Footer;

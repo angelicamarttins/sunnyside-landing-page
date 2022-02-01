@@ -1,54 +1,73 @@
-@import '../../assets/styles/variables';
+@import "../../assets/styles/variables";
 
-@mixin menuColor($colorOption, $colorOptionHover, $colorContactBg, $colorContact, $colorContactHover, $colorContactHoverBg) {
-    
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    &__link {
-        text-decoration: none;
-        text-transform: capitalize;
-        font: {
-            family: $textFont;
-        };
-        color: $colorOption;
-        padding: 1.5rem;
-        cursor: pointer;
-        &:hover {
-            color: $colorOptionHover;
-        };
-        
-        &--contact {
-            text-transform: uppercase;
-            font: {
-                family: $titleFont;
-                weight: 900;
-            };
-            background-color: $colorContactBg;
-            color: $mainTitleNameTesti;
-            border-radius: 30px;
-            padding: 1.05rem 1.5rem;
+@mixin menuColor(
+  $colorOption,
+  $colorOptionHover,
+  $colorContactBg,
+  $colorContact,
+  $colorContactHover,
+  $colorContactHoverBg
+) {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-            &:hover {
-                background-color: $colorContactHoverBg;
-                color: $colorContactHover;
-            };
+  &__link {
+    text-decoration: none;
+    text-transform: capitalize;
+    font: {
+      family: $textFont;
+    }
+    color: $colorOption;
+    padding: 1.5rem;
+    cursor: pointer;
+    &:hover {
+      color: $colorOptionHover;
+    }
 
-        }
-    };
+    &--contact {
+      text-transform: uppercase;
+      font: {
+        family: $titleFont;
+        weight: 900;
+      }
+      background-color: $colorContactBg;
+      color: $mainTitleNameTesti;
+      border-radius: 30px;
+      padding: 1.05rem 1.5rem;
+
+      &:hover {
+        background-color: $colorContactHoverBg;
+        color: $colorContactHover;
+      }
+    }
+  }
 }
 
 .op-link {
-    &__list-d {
-        @include menuColor($white, $whiteHover, $white, $mainTitleNameTesti, $white, $whiteHover)
-    }
-    
-    &__list-m {
-        flex-direction: column;
-        gap: 2rem;
+  &__list-d {
+    @include menuColor(
+      $white,
+      $whiteHover,
+      $white,
+      $mainTitleNameTesti,
+      $white,
+      $whiteHover
+    );
+  }
 
-        @include menuColor($mainText, $mainTextHover, $yellowHover, $mainTitleNameTesti, $mainTitleNameTesti, $yellowBorder)
-    }
+  &__list-m {
+    flex-direction: column;
+    gap: 2rem;
+
+    @include menuColor(
+      $mainText,
+      $mainTextHover,
+      $yellowHover,
+      $mainTitleNameTesti,
+      $mainTitleNameTesti,
+      $yellowBorder
+    );
+  }
 }

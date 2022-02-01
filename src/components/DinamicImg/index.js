@@ -1,19 +1,20 @@
-import './DinamicImg.scss'
+import "./DinamicImg.scss";
 
 function DinamicImg(props) {
-    return (
-        <div className='dinamic-img'>    
-            
-            <picture className="dinamic-img__picture">
+  return (
+    <div className="dinamic-img">
+      <picture className="dinamic-img__picture">
+        <source
+          className="picture__src"
+          media={props.media}
+          srcSet={props.srcset}
+          alt={props.alt}
+        />
 
-            <source className="picture__src" media={props.media} srcSet={props.srcset} alt={props.alt} />
-
-            <img className="picture__img" src={props.src} alt={props.alt} />
-
-            </picture>
-    
-        </div>
-    )
+        <img className="picture__img" src={props.src} alt={props.alt} />
+      </picture>
+    </div>
+  );
 }
 
 export default DinamicImg;

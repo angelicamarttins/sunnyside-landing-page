@@ -4,10 +4,8 @@ import MenuMobile from "../../components/MenuMobile";
 
 function Header() {
   return (
-    <div className="header"> 
-      
+    <div className="header">
       <MenuMobile />
-
     </div>
   );
 }
