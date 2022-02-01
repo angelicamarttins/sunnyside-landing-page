@@ -1,6 +1,3 @@
-import React from "react";
-
-// Import styles
 import './OptionsLink.scss';
 
 function OptionsLink(props) {

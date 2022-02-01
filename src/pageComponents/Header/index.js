@@ -1,9 +1,5 @@
-import React from "react";
-
-// Import styles
 import "./Header.scss";
 
-// Import components
 import MenuMobile from "../../components/MenuMobile";
 
 function Header() {

@@ -1,8 +1,4 @@
-import React from "react";
-
-// Import style
 import './DinamicImg.scss'
-
 
 function DinamicImg(props) {
     return (

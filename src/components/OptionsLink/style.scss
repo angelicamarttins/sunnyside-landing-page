@@ -1,7 +1,5 @@
-// Import variables
 @import '../../assets/styles/variables';
 
-// Define reuseable code
 @mixin menuColor($colorOption, $colorOptionHover, $colorContactBg, $colorContact, $colorContactHover, $colorContactHoverBg) {
     
     list-style-type: none;

@@ -1,12 +1,8 @@
-import React from "react";
-
-// Import styles
 import './MenuMobile.scss';
 
-// Import components
 import OptionsLink from "../OptionsLink";
 import Logo from '../Logo'
-//Import images
+
 import WhiteLogo from '../../assets/images/icons/logoWhite.svg'
 import Hamburger from '../../assets/images/icons/icon-hamburger.svg'
 
