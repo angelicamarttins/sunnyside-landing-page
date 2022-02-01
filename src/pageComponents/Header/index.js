@@ -4,7 +4,7 @@ import React from "react";
 import "./Header.scss";
 
 // Import components
-import MenuMobile from "../../components/menuMobile/MenuMobile";
+import MenuMobile from "../../components/MenuMobile";
 
 function Header() {
   return (

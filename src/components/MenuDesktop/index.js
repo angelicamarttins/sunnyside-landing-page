@@ -4,10 +4,10 @@ import React from "react";
 import './MenuDesktop.scss';
 
 // Import components
-import Logo from '../../components/logo/Logo'
-import OptionsLink from "../optionsLink/OptionsLink";
-import DinamicImg from '../dinamicImg/DinamicImg'
-import TitleContainer from '../../pageComponents/titleContainer/TitleContainer'
+import Logo from '../Logo'
+import OptionsLink from "../OptionsLink";
+import DinamicImg from '../DinamicImg'
+import TitleContainer from '../../pageComponents/TitleContainer/TitleContainer'
 
 //Import images
 import LogoWhite from '../../assets/images/icons/logoWhite.svg'
