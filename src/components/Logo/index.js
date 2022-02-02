@@ -1,4 +1,4 @@
-import "./Logo.scss";
+import "./style.scss";
 
 const Logo = (props) => {
   return (

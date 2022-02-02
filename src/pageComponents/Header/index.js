@@ -1,4 +1,4 @@
-import "./Header.scss";
+import "./style.scss";
 
 import MenuMobile from "../../components/MenuMobile";
 

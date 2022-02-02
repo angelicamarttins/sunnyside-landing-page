@@ -1,52 +1,29 @@
-import "./OptionsLink.scss";
+import "./style.scss";
 
 const OptionsLink = (props) => {
+  const { target, rel } = props;
+  const { list, item, link, contact } = props.className;
+  console.log(link);
   return (
     <div className="op-link">
-      <ul className={props.className.list}>
-        <li className={props.className.item}>
-          <a
-            className={props.className.link}
-            href={props.href.about}
-            target={props.target}
-            rel={props.rel}
-          >
-            about
-          </a>
-        </li>
-        <li className="op-link__item">
-          <a
-            className={props.className.link}
-            href={props.href.services}
-            target={props.target}
-            rel={props.rel}
-          >
-            services
-          </a>
-        </li>
-        <li className="op-link__item">
-          <a
-            className={props.className.link}
-            href={props.href.projects}
-            target={props.target}
-            rel={props.rel}
-          >
-            projects
-          </a>
-        </li>
-        <li className="op-link__item">
-          <a
-            className={props.className.contact}
-            href={props.href.contact}
-            target={props.target}
-            rel={props.rel}
-          >
-            contact
-          </a>
-        </li>
+      <ul className={list}>
+        {props.href.map((element) => {
+          return (
+            <li className={item}>
+              <a
+                className={`${element.title === "contact" ? contact : link}`}
+                href={element.href}
+                target={target}
+                rel={rel}
+              >
+                {element.title}
+              </a>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );
-}
+};
 
 export default OptionsLink;
