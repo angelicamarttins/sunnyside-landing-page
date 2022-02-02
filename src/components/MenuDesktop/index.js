@@ -1,28 +1,52 @@
-import "./MenuDesktop.scss";
+import "./style.scss";
 
 import Logo from "../Logo";
 import OptionsLink from "../OptionsLink";
 import DinamicImg from "../DinamicImg";
-import TitleContainer from "../../pageComponents/TitleContainer/";
+import TitleContainer from "../../pageComponents/TitleContainer";
 
 import LogoWhite from "../../assets/images/icons/logoWhite.svg";
 import HeaderImg from "../../assets/images/desktop/image-header.jpg";
 import ArrowDown from "../../assets/images/icons/icon-arrow-down.svg";
 
-const hrefObj = {
-  about: "https://linkedin.com/in/marttinsangelica",
-  services: "https://angelicamarttins.github.io/portfolio/",
-  projects: "https://https://github.com/angelicamarttins",
-  contact: "https://linkedin.com/in/marttinsangelica",
+const arrayItem = [
+  {
+    title: "about",
+    href: "https://linkedin.com/in/marttinsangelica",
+  },
+  {
+    title: "services",
+    href: "https://angelicamarttins.github.io/portfolio/",
+  },
+  {
+    title: "projects",
+    href: "https://https://github.com/angelicamarttins",
+  },
+  {
+    title: "contact",
+    href: "https://linkedin.com/in/marttinsangelica",
+  },
+];
+
+const classNameDesktop = {
+  list: "op-link__list-d",
+  item: "op-link__list-d__item",
+  link: "op-link__list-d__link",
+  contact: "op-link__list-d__link op-link__list-d__link--contact",
 };
 
-const MenuDesktop = (props) => {
+const MenuDesktop = () => {
   return (
     <div>
       <div className="menu-desktop">
         <Logo src={LogoWhite} alt="Sunnyside white logo" />
 
-        <OptionsLink href={hrefObj} target="_blank" rel="external" />
+        <OptionsLink
+          className={classNameDesktop}
+          href={arrayItem}
+          target="_blank"
+          rel="external"
+        />
       </div>
 
       <div className="title">
@@ -32,6 +56,6 @@ const MenuDesktop = (props) => {
       </div>
     </div>
   );
-}
+};
 
 export default MenuDesktop;

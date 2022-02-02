@@ -1,4 +1,4 @@
-import "./DinamicImg.scss";
+import "./style.scss";
 
 const DinamicImg = (props) => {
   return (

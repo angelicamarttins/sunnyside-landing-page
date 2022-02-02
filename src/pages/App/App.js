@@ -1,14 +1,12 @@
-import React from "react";
 import "./App.scss";
-import Header from "../../pageComponents/header/Header";
+import MenuDesktop from "../../components/MenuDesktop";
 
-function App() {
+const App = () => {
   return (
     <header>
-      <Header />
-    
+      <MenuDesktop />
     </header>
   );
-}
+};
 
 export default App;
