@@ -6,8 +6,10 @@
   right: 0;
   left: 0;
   z-index: 1;
-
+  max-width: 100%;
+  
   &__title {
+    max-width: 100%;
     text-align: center;
     z-index: 2;
     padding-bottom: 1.5em;
@@ -24,6 +26,7 @@
   }
 
   &__arrow-down {
+    max-width: 100%;
     display: block;
     margin: auto;
     z-index: 3;

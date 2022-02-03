@@ -18,6 +18,7 @@
     text-transform: capitalize;
     font: {
       family: $textFont;
+      size: clamp(1vw, 1.5vw, 2vw);
     }
     color: $colorOption;
     padding: 1.5rem;
