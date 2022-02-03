@@ -2,7 +2,7 @@
 
 .title-container {
   position: absolute;
-  top: 25%;
+  top: 20%;
   right: 0;
   left: 0;
   z-index: 1;
@@ -13,19 +13,20 @@
     padding-bottom: 1.5em;
     font: {
       weight: bolder;
-      size: 2.25rem;
+      size: clamp(1rem, 5vw, 10rem);
       family: "Fraunces", serif;
     }
     letter-spacing: 6px;
-    color: #fff;
+    color: $white;
     text-transform: uppercase;
 
-    color: #fff;
+    color: $white;
   }
 
   &__arrow-down {
     display: block;
     margin: auto;
     z-index: 3;
+    height: clamp(5vw, 12vw, 18vw);
   }
 }
