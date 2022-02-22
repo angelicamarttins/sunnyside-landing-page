@@ -1,74 +1,60 @@
 @import "../../assets/styles/variables";
 
-@mixin menuColor(
-  $colorOption,
-  $colorOptionHover,
-  $colorContactBg,
-  $colorContact,
-  $colorContactHover,
-  $colorContactHoverBg
-) {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.op-l {
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  &__link {
-    text-decoration: none;
-    text-transform: capitalize;
-    font: {
-      family: $textFont;
-      size: clamp(1vw, 1.5vw, 2vw);
-    }
-    color: $colorOption;
-    padding: 1.5rem;
-    cursor: pointer;
-    &:hover {
-      color: $colorOptionHover;
-    }
-
-    &--contact {
-      text-transform: uppercase;
+    &__link {
+      text-decoration: none;
+      text-transform: capitalize;
       font: {
-        family: $titleFont;
-        weight: 900;
+        size: clamp(1vw, 1.5vw, 2vw);
       }
-      background-color: $colorContactBg;
-      color: $mainTitleNameTesti;
-      border-radius: 30px;
-      padding: 1.05rem 1.5rem;
-
-      &:hover {
-        background-color: $colorContactHoverBg;
-        color: $colorContactHover;
-      }
+      padding: 1.5rem;
+      cursor: pointer;
     }
   }
+
+  // &__list-m {
+  //   flex-direction: column;
+  //   gap: 2rem;
+
+  //   @include menuColor(
+  //     $mainText,
+  //     $mainTextHover,
+  //     $yellowHover,
+  //     $mainTitleNameTesti,
+  //     $mainTitleNameTesti,
+  //     $yellowBorder
+  //   );
+  // }
 }
 
-.op-link {
-  &__list-d {
-    @include menuColor(
-      $white,
-      $whiteHover,
-      $white,
-      $mainTitleNameTesti,
-      $white,
-      $whiteHover
-    );
+.contact {
+  text-transform: uppercase;
+  font: {
+    // family: $titleFont;
+    weight: 900;
   }
+  // background-color: $colorContactBg;
+  // color: $mainTitleNameTesti;
+  border-radius: 30px;
+  padding: 1.05rem 1.5rem;
 
-  &__list-m {
-    flex-direction: column;
-    gap: 2rem;
+  //   &:hover {
+  //     background-color: $colorContactHoverBg;
+  //     color: $colorContactHover;
+  //   }
+}
 
-    @include menuColor(
-      $mainText,
-      $mainTextHover,
-      $yellowHover,
-      $mainTitleNameTesti,
-      $mainTitleNameTesti,
-      $yellowBorder
-    );
+.desktop {
+  font-family: $textFont;
+  color: $white;
+
+  &:hover {
+    color: $whiteHover;
   }
 }

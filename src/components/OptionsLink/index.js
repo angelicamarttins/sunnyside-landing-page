@@ -1,22 +1,21 @@
 import "./style.scss";
 
-const OptionsLink = (props) => {
-  const { target, rel } = props;
-  const { list, item, link, contact } = props.className;
-  console.log(link);
+const OptionsLink = ({ target, rel, href, className, device }) => {
+  const { list, item, link, contact } = className;
+
   return (
     <div className="op-link">
       <ul className={list}>
-        {props.href.map((element) => {
+        {href.map(({title, ref}) => {
           return (
             <li className={item}>
               <a
-                className={`${element.title === "contact" ? contact : link}`}
-                href={element.href}
+                className={`${title === "contact" ? contact : link} ${device === 'desktop' ? 'desktop' : 'mobile'}`}
+                href={ref}
                 target={target}
                 rel={rel}
               >
-                {element.title}
+                {title}
               </a>
             </li>
           );

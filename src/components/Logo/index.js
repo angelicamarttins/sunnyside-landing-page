@@ -1,11 +1,11 @@
 import "./style.scss";
 
-const Logo = (props) => {
+const Logo = ({ src, alt }) => {
   return (
-    <div>
-      <img className="logo" src={props.src} alt={props.alt} />
-    </div>
+    <>
+      <img className="logo" src={src} alt={alt} />
+    </>
   );
-}
+};
 
 export default Logo;

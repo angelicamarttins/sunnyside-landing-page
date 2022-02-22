@@ -1,8 +1,6 @@
 import "./style.scss";
 
-const DinamicImg = (props) => {
-  const { media, srcSet, src, alt } = props;
-  
+const DinamicImg = ({ media, srcSet, src, alt }) => {
   return (
     <div className="dinamic-img">
       <picture className="dinamic-img__picture">

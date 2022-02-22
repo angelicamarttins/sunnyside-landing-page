@@ -4,9 +4,9 @@ import MenuMobile from "../../components/MenuMobile";
 
 const Header = (props) => {
   return (
-    <div className="header">
+    <header className="header">
       <MenuMobile />
-    </div>
+    </header>
   );
 }
 
