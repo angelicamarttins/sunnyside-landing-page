@@ -1,9 +1,9 @@
 // General settings
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 18px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 18px;
 }
 
 @import '../src/assets/styles/variables.scss';
@@ -11,7 +11,6 @@
 // Import media query
 @import './pages/mediaquery/mediaQuery.scss';
 
-
 body {
-    background-color: $bgMenu;
+	background-color: $bgMenu;
 }

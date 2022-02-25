@@ -1,71 +1,70 @@
-@import "../../assets/styles/variables";
+@import '../../assets/styles/variables';
 
 .op-l {
-  &__list {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	&__list {
+		list-style-type: none;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
-    &__link {
-      text-decoration: none;
-      text-transform: capitalize;
-      letter-spacing: 0;
-      margin: 0 0.5rem;
-      padding: 1.5rem;
-      cursor: pointer;
-      font: {
-        family: $textFont;
-        size: clamp(1vw, 1.15vw, 1.5vw);
-      }
-    }
-  }
+		&__link {
+			text-decoration: none;
+			text-transform: capitalize;
+			letter-spacing: 0;
+			margin: 0 0.5rem;
+			padding: 1.5rem;
+			cursor: pointer;
+			font: {
+				family: $textFont;
+				size: clamp(1vw, 1.15vw, 1.5vw);
+			}
+		}
+	}
 }
 
 .desktop {
-  color: $white;
+	color: $white;
 
-  &:hover {
-    color: $whiteHover;
-  }
+	&:hover {
+		color: $whiteHover;
+	}
 }
 
 .mobile {
-  color: $mainText;
+	color: $mainText;
 
-  &:hover {
-    color: $mainTextHover;
-  }
+	&:hover {
+		color: $mainTextHover;
+	}
 }
 
 .contact {
-  text-transform: uppercase;
-  font: {
-    family: $titleFont;
-    weight: 900;
-  }
-  border-radius: 30px;
-  padding: 1.05rem 1.5rem;
+	text-transform: uppercase;
+	font: {
+		family: $titleFont;
+		weight: 900;
+	}
+	border-radius: 30px;
+	padding: 1.05rem 1.5rem;
 
-  &--desktop {
-    background-color: $white;
-    color: $mainTitleNameTesti;
-    font-weight: 900;
-    
-    &:hover {
-      background-color: $yellow;
-      color: $white;
-    }
-  }
+	&--desktop {
+		background-color: $white;
+		color: $mainTitleNameTesti;
+		font-weight: 900;
 
-  &--mobile {
-    background-color: $yellow;
-    color: $mainTitleNameTesti;
-    font-weight: 900;
-    
-    &:hover {
-      color: $white;
-    }
-  }
+		&:hover {
+			background-color: $yellow;
+			color: $white;
+		}
+	}
+
+	&--mobile {
+		background-color: $yellow;
+		color: $mainTitleNameTesti;
+		font-weight: 900;
+
+		&:hover {
+			color: $white;
+		}
+	}
 }
-

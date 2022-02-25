@@ -1,11 +1,11 @@
-@import "../../assets/styles/variables";
+@import '../../assets/styles/variables';
 
 .menu-desktop {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 100%;
-  box-sizing: border-box;
-  padding: 2rem;
-  background-color: $bgMenu;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 100%;
+	box-sizing: border-box;
+	padding: 2rem;
+	background-color: $bgMenu;
 }

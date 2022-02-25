@@ -1,13 +1,13 @@
-import "./style.scss";
+import './style.scss'
 
-import MenuMobile from "../../components/MenuMobile";
+import MenuMobile from '../../components/MenuMobile'
 
 const Header = (props) => {
-  return (
-    <header className="header">
-      <MenuMobile />
-    </header>
-  );
+	return (
+		<header className='header'>
+			<MenuMobile />
+		</header>
+	)
 }
 
-export default Header;
+export default Header

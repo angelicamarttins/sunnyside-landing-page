@@ -1,5 +1,5 @@
-import "./Testimonials.scss";
+import './Testimonials.scss'
 
-const Testimonials = (props) => {};
+const Testimonials = (props) => {}
 
-export default Testimonials;
+export default Testimonials

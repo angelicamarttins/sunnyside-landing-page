@@ -1,35 +1,35 @@
-@import "../../assets/styles/variables";
+@import '../../assets/styles/variables';
 
 .title-container {
-  position: absolute;
-  top: 20%;
-  right: 0;
-  left: 0;
-  z-index: 1;
-  max-width: 100%;
-  
-  &__title {
-    max-width: 100%;
-    text-align: center;
-    z-index: 2;
-    padding-bottom: 1.5em;
-    font: {
-      weight: bolder;
-      size: clamp(1rem, 5vw, 10rem);
-      family: "Fraunces", serif;
-    }
-    letter-spacing: 6px;
-    color: $white;
-    text-transform: uppercase;
+	position: absolute;
+	top: 20%;
+	right: 0;
+	left: 0;
+	z-index: 1;
+	max-width: 100%;
 
-    color: $white;
-  }
+	&__title {
+		max-width: 100%;
+		text-align: center;
+		z-index: 2;
+		padding-bottom: 1.5em;
+		font: {
+			weight: bolder;
+			size: clamp(1rem, 5vw, 10rem);
+			family: 'Fraunces', serif;
+		}
+		letter-spacing: 6px;
+		color: $white;
+		text-transform: uppercase;
 
-  &__arrow-down {
-    max-width: 100%;
-    display: block;
-    margin: auto;
-    z-index: 3;
-    height: clamp(5vw, 12vw, 18vw);
-  }
+		color: $white;
+	}
+
+	&__arrow-down {
+		max-width: 100%;
+		display: block;
+		margin: auto;
+		z-index: 3;
+		height: clamp(5vw, 12vw, 18vw);
+	}
 }

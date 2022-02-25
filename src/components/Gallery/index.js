@@ -1,5 +1,5 @@
-import "./Gallery.scss";
+import './Gallery.scss'
 
-const Gallery = (props) => {};
+const Gallery = (props) => {}
 
-export default Gallery;
+export default Gallery
