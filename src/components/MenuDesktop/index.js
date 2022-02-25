@@ -32,7 +32,7 @@ const className = {
   list: "op-l__list",
   item: "op-l__list__item",
   link: "op-l__list__link",
-  contact: "op-l__list-d__link contact",
+  contact: "contact",
 };
 
 const MenuDesktop = () => {
