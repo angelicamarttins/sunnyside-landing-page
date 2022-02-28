@@ -1,18 +1,18 @@
-import "./LearnMore.scss";
+import './style.scss'
 
-const LearnMore = (props) => {
-  return (
-    <div className="learn-more">
-      <a
-        className={props.className}
-        href={props.href}
-        target={props.target}
-        rel={props.rel}
-      >
-        learn more
-      </a>
-    </div>
-  );
+const LearnMore = ({ color, href, target, rel }) => {
+	return (
+		<div className='learn-more'>
+			<a
+				className={`learn-more--${color}`}
+				href={href}
+				target={target}
+				rel={rel}
+			>
+				learn more
+			</a>
+		</div>
+	)
 }
 
-export default LearnMore;
+export default LearnMore

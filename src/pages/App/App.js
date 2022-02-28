@@ -1,12 +1,47 @@
-import "./App.scss";
-import MenuDesktop from "../../components/MenuDesktop";
+import './App.scss'
+import MenuDesktop from '../../components/MenuDesktop'
+import CoPresentation from '../../components/CoPresentation'
+// import DinamicImg from '../../components/DinamicImg'
+// import LearnMore from '../../components/LearnMore'
+
+import EggDesktop from '../../assets/images/desktop/image-transform.jpg'
+import EggMobile from '../../assets/images/mobile/image-transform.jpg'
+import OrangeCupDesktop from '../../assets/images/desktop/image-stand-out.jpg'
+import OrangeCupMobile from '../../assets/images/mobile/image-stand-out.jpg'
 
 const App = () => {
-  return (
-    <header>
-      <MenuDesktop />
-    </header>
-  );
-};
+	return (
+		<div className='app'>
+			<header>
+				<MenuDesktop />
+			</header>
+			<main>
+				<section>
+					<CoPresentation
+						src={EggDesktop}
+						srcSet={EggMobile}
+						media='(max-width: 1440px)'
+						alt=''
+						type='image/jpg'
+						color='yellow'
+						title='Transform your brand'
+						text='We are a full-service creative agency specializing in helping brands grow fast. 
+            Engage your clients through compelling visuals that do most of the marketing for you.'
+					/>
+					<CoPresentation
+						src={OrangeCupDesktop}
+						srcSet={OrangeCupMobile}
+						media='(max-width: 1440px)'
+						alt=''
+						type='image/jpg'
+						color='red'
+						title='Stand out to the right audience'
+						text='Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.'
+					/>
+				</section>
+			</main>
+		</div>
+	)
+}
 
-export default App;
+export default App

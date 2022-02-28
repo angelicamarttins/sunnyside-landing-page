@@ -2,15 +2,17 @@
 
 @mixin borderHoverColor($colorBorder, $colorHover) {
   position: relative;
+  z-index: 2;
   text-decoration: none;
   text-transform: uppercase;
   color: $mainTitleNameTesti;
+  cursor: pointer;
+
   font: {
     family: $titleFont;
     weight: 900;
-    size: 1.5rem;
   }
-
+  
   &::before {
     content: "";
     position: absolute;
@@ -20,7 +22,7 @@
     height: 0.7rem;
     background: $colorBorder;
     z-index: -1;
-    border-radius: 0.5rem;
+    border-radius: 8px;
     transition: 0.35s;
   }
 
@@ -30,11 +32,11 @@
 }
 
 .learn-more {
-  &__link--red {
+  &--red {
     @include borderHoverColor($redBorder, $redHover);
   }
 
-  &__link--yellow {
-    @include borderHoverColor($yellowBorder, $yellowHover);
+  &--yellow {
+    @include borderHoverColor($yellowHover, $yellow);
   }
 }
