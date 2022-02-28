@@ -37,7 +37,11 @@ const className = {
 
 const MenuDesktop = () => {
 	return (
+<<<<<<< HEAD
 		<>
+=======
+		<div className='test'>
+>>>>>>> develop
 			<div className='menu-desktop'>
 				<Logo src={LogoWhite} alt='Sunnyside white logo' />
 
@@ -51,11 +55,19 @@ const MenuDesktop = () => {
 			</div>
 
 			<div className='title'>
+<<<<<<< HEAD
 				<DinamicImg src={HeaderImg} alt='' />
 
 				<TitleContainer src={ArrowDown}>we are creatives</TitleContainer>
 			</div>
 		</>
+=======
+				<DinamicImg src={HeaderImg} srcSet={HeaderImg} alt='' />
+
+				<TitleContainer src={ArrowDown} children='we are creatives' />
+			</div>
+		</div>
+>>>>>>> develop
 	)
 }
 

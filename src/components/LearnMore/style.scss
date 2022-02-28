@@ -1,28 +1,30 @@
 @import '../../assets/styles/variables.scss';
 
 @mixin borderHoverColor($colorBorder, $colorHover) {
-	position: relative;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: $mainTitleNameTesti;
-	font: {
-		family: $titleFont;
-		weight: 900;
-		size: 1.5rem;
-	}
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $mainTitleNameTesti;
+  cursor: pointer;
 
-	&::before {
-		content: '';
-		position: absolute;
-		top: 65%;
-		left: -6%;
-		width: 115%;
-		height: 0.7rem;
-		background: $colorBorder;
-		z-index: -1;
-		border-radius: 0.5rem;
-		transition: 0.35s;
-	}
+  font: {
+    family: $titleFont;
+    weight: 900;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65%;
+    left: -6%;
+    width: 115%;
+    height: 0.7rem;
+    background: $colorBorder;
+    z-index: -1;
+    border-radius: 8px;
+    transition: 0.35s;
+  }
 
 	&:hover::before {
 		background: $colorHover;
@@ -30,11 +32,11 @@
 }
 
 .learn-more {
-	&__link--red {
-		@include borderHoverColor($redBorder, $redHover);
-	}
+  &--red {
+    @include borderHoverColor($redBorder, $redHover);
+  }
 
-	&__link--yellow {
-		@include borderHoverColor($yellowBorder, $yellowHover);
-	}
+  &--yellow {
+    @include borderHoverColor($yellowHover, $yellow);
+  }
 }
