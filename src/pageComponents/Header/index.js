@@ -1,11 +1,11 @@
 import './style.scss'
 
-import MenuMobile from '../../components/MenuMobile'
+import MenuDesktop from '../../components/MenuDesktop'
 
-const Header = (props) => {
+const Header = () => {
 	return (
 		<header className='header'>
-			<MenuMobile />
+			<MenuDesktop />
 		</header>
 	)
 }
