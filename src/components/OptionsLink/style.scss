@@ -47,19 +47,13 @@
 	border-radius: 30px;
 	padding: 1.05rem 1.5rem;
 
-  &--desktop {
-    background-color: $white;
-    color: $mainTitleNameTesti;
-    font-weight: 900;
-    
-    &:hover {
-      background-color: $whiteHover;
-      color: $white;
-    }
-  }
+	&--desktop {
+		background-color: $white;
+		color: $mainTitleNameTesti;
+		font-weight: 900;
 
 		&:hover {
-			background-color: $yellow;
+			background-color: $whiteHover;
 			color: $white;
 		}
 	}
@@ -73,3 +67,4 @@
 			color: $white;
 		}
 	}
+}

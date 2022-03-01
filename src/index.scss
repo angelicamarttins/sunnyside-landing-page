@@ -1,4 +1,3 @@
-// General settings
 * {
 	margin: 0;
 	padding: 0;
@@ -8,9 +7,36 @@
 
 @import '../src/assets/styles/variables.scss';
 
-// Import media query
-@import './pages/mediaquery/mediaQuery.scss';
-
 body {
 	background-color: $bgMenu;
 }
+
+@media (min-width: 750px) {
+	.title-container {
+		top: 20%;
+	}
+}
+
+@media (min-width: 855px) {
+	.title-container {
+		top: 40%;
+	}
+}
+
+@media (min-width: 1000px) {
+	.title-container {
+		top: 55%;
+	}
+}
+
+@media (min-width: 1150px) {
+	.title-container {
+		top: 65%;
+	}
+}
+
+@media (min-width: 1600px) {
+	.title-container {
+		top: 70%;
+	}
+} ;

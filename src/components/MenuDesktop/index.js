@@ -6,7 +6,8 @@ import DinamicImg from '../DinamicImg'
 import TitleContainer from '../TitleContainer'
 
 import LogoWhite from '../../assets/images/icons/logoWhite.svg'
-import HeaderImg from '../../assets/images/desktop/image-header.jpg'
+import HeaderDesktop from '../../assets/images/desktop/image-header.jpg'
+import HeaderMobile from '../../assets/images/mobile/image-header.jpg'
 import ArrowDown from '../../assets/images/icons/icon-arrow-down.svg'
 
 const itens = [
@@ -37,12 +38,8 @@ const className = {
 
 const MenuDesktop = () => {
 	return (
-<<<<<<< HEAD
-		<>
-=======
-		<div className='test'>
->>>>>>> develop
-			<div className='menu-desktop'>
+		<div className='menu-desktop'>
+			<div className='menu-desktop__header'>
 				<Logo src={LogoWhite} alt='Sunnyside white logo' />
 
 				<OptionsLink
@@ -54,20 +51,17 @@ const MenuDesktop = () => {
 				/>
 			</div>
 
-			<div className='title'>
-<<<<<<< HEAD
-				<DinamicImg src={HeaderImg} alt='' />
-
+			<div className='menu-desktop__title'>
+				<DinamicImg
+					src={HeaderDesktop}
+					srcSet={HeaderMobile}
+					alt=''
+					media='(max-width: 1440px)'
+					type='image/jpg'
+				/>
 				<TitleContainer src={ArrowDown}>we are creatives</TitleContainer>
 			</div>
-		</>
-=======
-				<DinamicImg src={HeaderImg} srcSet={HeaderImg} alt='' />
-
-				<TitleContainer src={ArrowDown} children='we are creatives' />
-			</div>
 		</div>
->>>>>>> develop
 	)
 }
 

@@ -8,7 +8,7 @@ const OptionsLink = ({ target, rel, href, className, device }) => {
 			<ul className={list}>
 				{href.map(({ title, ref }) => {
 					return (
-						<li className={item}>
+						<li className={item} key={title}>
 							<a
 								className={`${
 									title === 'contact'

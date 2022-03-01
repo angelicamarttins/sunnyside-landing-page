@@ -1,11 +1,13 @@
 @import '../../assets/styles/variables';
 
-.picture__src,
-.picture__img {
-<<<<<<< HEAD
-	max-width: 100%;
-=======
+.picture__src {
   height: 100%;
 	width: 100%;
->>>>>>> develop
+  display: none;
+}
+
+.picture__img {
+  height: 100%;
+	width: 100%;
+  display: inline-block;
 }

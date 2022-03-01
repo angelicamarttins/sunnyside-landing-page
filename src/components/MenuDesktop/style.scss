@@ -1,27 +1,19 @@
 @import '../../assets/styles/variables';
 
 .menu-desktop {
-<<<<<<< HEAD
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	max-width: 100%;
-	box-sizing: border-box;
-	padding: 2rem;
-	background-color: $bgMenu;
-=======
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 100%;
-  box-sizing: border-box;
-  padding: 2rem;
-  background-color: $bgMenu;
-  height: 100%;
->>>>>>> develop
-}
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 100%;
+		box-sizing: border-box;
+		padding: 2rem;
+		background-color: $bgMenu;
+		height: 100%;
+	}
 
-.title, .test {
-  height: 100%;
+	&__title {
+		height: 100%;
+    margin: -5px;
+	}
 }
-
