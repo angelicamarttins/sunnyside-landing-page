@@ -1,0 +1,41 @@
+@import '../../assets/styles/variables';
+
+.services {
+  &__img {
+    position: relative;
+    
+    &__text {
+      position: absolute;
+      bottom: calc(100vh - 100%);
+      right: 25%;
+      left: 25%;
+
+      &__title {
+        text-align: center;
+        font: {
+          family: $titleFont;
+          size: 1.5rem;
+          weight: 900;
+        }
+        margin-bottom: 1rem;
+      }
+
+      &__txt {
+        text-align: center;
+        font: {
+          family: $textFont;
+          weight: 900;
+        }
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+.blue {
+  color: $textProto;
+}
+
+.green {
+  color: $textGraphic;
+}

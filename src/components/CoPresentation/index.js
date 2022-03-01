@@ -25,7 +25,6 @@ const CoPresentation = ({
 				</div>
 			</div>
 
-			{/* <div className='co-presentation__img'> */}
 			<DinamicImg
 				src={src}
 				srcSet={srcSet}
@@ -33,7 +32,6 @@ const CoPresentation = ({
 				alt={alt}
 				type={type}
 			/>
-			{/* </div> */}
 		</article>
 	)
 }
