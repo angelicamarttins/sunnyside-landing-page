@@ -1,24 +1,37 @@
-import DinamicImg from '../DinamicImg'
-
 import './style.scss'
-const Services = ({ src, srcSet, alt, media, type, title, text, color }) => {
-	return (
-		<article className={`services ${color}`}>
-			<div className='services__img'>
-				<DinamicImg
-					src={src}
-					srcSet={srcSet}
-					alt={alt}
-					media={media}
-					type={type}
-				/>
 
-				<div className='services__img__text'>
-					<h3 className='services__img__text__title'>{title}</h3>
-					<p className='services__img__text__txt'>{text}</p>
-				</div>
-			</div>
-		</article>
+import Service from '../Service'
+
+import CherryDesktop from '../../assets/images/desktop/image-graphic-design.jpg'
+import CherryMobile from '../../assets/images/mobile/image-graphic-design.jpg'
+import TangerineDesktop from '../../assets/images/desktop/image-photography.jpg'
+import TangerineMobile from '../../assets/images/mobile/image-photography.jpg'
+
+const Services = () => {
+	return (
+		<section className='services'>
+			<Service
+				src={CherryDesktop}
+				srcSet={CherryMobile}
+				alt=''
+				media='(max-width: 1440px)'
+				type='image/jpg'
+				title='Graphic Design'
+				text='Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.'
+				color='green'
+			/>
+
+			<Service
+				src={TangerineDesktop}
+				srcSet={TangerineMobile}
+				alt=''
+				media='(max-width: 1440px)'
+				type='image/jpg'
+				title='Photography'
+				text='Increase your credibility by getting the most stunning, high-quality photos that improve your business image.'
+				color='blue'
+			/>
+		</section>
 	)
 }
 

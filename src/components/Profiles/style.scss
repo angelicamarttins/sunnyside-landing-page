@@ -1,0 +1,41 @@
+@import '../../assets/styles/variables.scss';
+
+.profiles {
+  max-width: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  &__img {
+    width: 100px;
+    height: 100px;
+    margin: 4rem;
+    border-radius: 50%;
+  }
+
+  &__text {
+    margin-bottom: 4rem;
+    font: {
+      family: $textFont;
+    }
+    line-height: 30px;
+    text-align: center;
+    color: $mainText;
+  }
+
+  &__name {
+    margin-bottom: 0.75rem;
+    font: {
+      family: $titleFont;
+      weight: 900;
+    }
+  }
+
+  &__position {
+    font: {
+      family: $textFont;
+    }
+    color: $testimonialPosition;
+  }
+}

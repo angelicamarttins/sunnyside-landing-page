@@ -1,9 +1,1 @@
 @import '../../assets/styles/variables';
-
-.main {
-  &__services {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}

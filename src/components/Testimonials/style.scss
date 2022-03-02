@@ -1,1 +1,9 @@
 @import '../../assets/styles/variables';
+
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  height: 100vh;
+}
