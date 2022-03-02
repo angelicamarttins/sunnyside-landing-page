@@ -19,8 +19,8 @@ const CoPresentation = ({
 		<article className='co-presentation'>
 			<div className='co-presentation__text'>
 				<div className='co-presentation__text--size'>
-					<h2 className='co-presentation__text__title size'>{title}</h2>
-					<p className='co-presentation__text__p size'>{text}</p>
+					<h2 className='co-presentation__text__title'>{title}</h2>
+					<p className='co-presentation__text__p'>{text}</p>
 					<LearnMore color={color} href={href} target={target} rel={rel} />
 				</div>
 			</div>
