@@ -1,9 +1,25 @@
 @import '../../assets/styles/variables';
 
 .testimonials {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 2rem;
-  height: 100vh;
+	height: 100vh;
+  border: 2px solid black;
+  &__title {
+    padding: 5%;
+    margin-top: 2rem;
+    font: {
+      size: 1.25rem;
+      family: $titleFont;
+    }
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: $testimonialTitle;
+	}
+
+	&__profiles {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 2rem;
+	}
 }
