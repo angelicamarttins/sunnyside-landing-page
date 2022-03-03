@@ -1,6 +1,6 @@
 import './style.scss'
 
-const OptionsLink = ({ target, rel, href, className, device }) => {
+const OptionsLink = ({ target, rel, href, className, mofidier }) => {
 	const { list, item, link, contact } = className
 
 	return (
@@ -12,8 +12,8 @@ const OptionsLink = ({ target, rel, href, className, device }) => {
 							<a
 								className={`${
 									title === 'contact'
-										? `${link} ${contact} contact--${device}`
-										: `${link} ${device}`
+										? `${link} ${contact} contact--${mofidier}`
+										: `${link} ${mofidier}`
 								}`}
 								href={ref}
 								target={target}

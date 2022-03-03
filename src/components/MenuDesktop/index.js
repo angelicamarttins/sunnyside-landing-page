@@ -40,14 +40,14 @@ const MenuDesktop = () => {
 	return (
 		<div className='menu-desktop'>
 			<div className='menu-desktop__header'>
-				<Logo src={LogoWhite} alt='Sunnyside white logo' />
+				<Logo src={LogoWhite} alt='Sunnyside white logo' modifier='header' />
 
 				<OptionsLink
 					className={className}
 					href={itens}
 					target='_blank'
 					rel='external'
-					device='desktop'
+					mofidier='desktop'
 				/>
 			</div>
 

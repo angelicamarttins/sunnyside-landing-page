@@ -1,0 +1,26 @@
+@import '../../assets/styles/variables';
+
+.op-icon {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin-top: 3rem;
+    padding: 2rem;
+    list-style-type: none;
+  }
+
+  &__link {
+    padding: 0.25rem;
+    text-decoration: none;
+  }
+
+  &__img{
+
+    &:hover {
+      filter: brightness(10);
+    }
+  }
+}

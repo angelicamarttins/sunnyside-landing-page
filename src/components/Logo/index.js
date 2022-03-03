@@ -1,9 +1,9 @@
 import './style.scss'
 
-const Logo = ({ src, alt }) => {
+const Logo = ({ src, alt, modifier }) => {
 	return (
 		<>
-			<img className='logo' src={src} alt={alt} />
+			<img className={`logo--${modifier}`} src={src} alt={alt} />
 		</>
 	)
 }

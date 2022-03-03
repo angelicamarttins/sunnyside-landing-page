@@ -1,0 +1,10 @@
+@import '../../assets/styles/variables';
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $footerBg;
+  padding: 4rem 0 2rem 0;
+}

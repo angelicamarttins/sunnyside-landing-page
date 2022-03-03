@@ -38,6 +38,14 @@
 	}
 }
 
+.footer-op-link {
+	color: $footerText;
+
+	&:hover{
+		color: $white;
+	}
+}
+
 .contact {
 	text-transform: uppercase;
 	font: {

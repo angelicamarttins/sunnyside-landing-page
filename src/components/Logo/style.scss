@@ -1,5 +1,12 @@
 @import '../../assets/styles/variables.scss';
 
 .logo {
-	height: clamp(1vw, 3vw, 5vw);
+	&--header {
+		height: clamp(1vw, 3vw, 5vw);
+	}
+
+	&--footer {
+		height: clamp(1vw, 2.15vw, 3vw);
+		margin: 2rem;
+	}
 }
