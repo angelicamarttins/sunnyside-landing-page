@@ -2,13 +2,8 @@ import './style.scss'
 
 import Logo from '../Logo'
 import OptionsLink from '../OptionsLink'
-import DinamicImg from '../DinamicImg'
-import TitleContainer from '../TitleContainer'
 
 import LogoWhite from '../../assets/images/icons/logoWhite.svg'
-import HeaderDesktop from '../../assets/images/desktop/image-header.jpg'
-import HeaderMobile from '../../assets/images/mobile/image-header.jpg'
-import ArrowDown from '../../assets/images/icons/icon-arrow-down.svg'
 
 const itens = [
 	{
@@ -49,17 +44,6 @@ const MenuDesktop = () => {
 					rel='external'
 					mofidier='desktop'
 				/>
-			</div>
-
-			<div className='menu-desktop__title'>
-				<DinamicImg
-					src={HeaderDesktop}
-					srcSet={HeaderMobile}
-					alt=''
-					media='(max-width: 1440px)'
-					type='image/jpg'
-				/>
-				<TitleContainer src={ArrowDown}>we are creatives</TitleContainer>
 			</div>
 		</div>
 	)

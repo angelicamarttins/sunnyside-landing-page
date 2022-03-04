@@ -6,31 +6,31 @@ import Logo from '../Logo'
 import WhiteLogo from '../../assets/images/icons/logoWhite.svg'
 import Hamburger from '../../assets/images/icons/icon-hamburger.svg'
 
-const MenuMobile = (props) => {
-	const arrayItem = [
+const MenuMobile = () => {
+	const itens = [
 		{
 			title: 'about',
-			href: 'https://linkedin.com/in/marttinsangelica',
+			ref: 'https://linkedin.com/in/marttinsangelica',
 		},
 		{
 			title: 'services',
-			href: 'https://angelicamarttins.github.io/portfolio/',
+			ref: 'https://angelicamarttins.github.io/portfolio/',
 		},
 		{
 			title: 'projects',
-			href: 'https://https://github.com/angelicamarttins',
+			ref: 'https://https://github.com/angelicamarttins',
 		},
 		{
 			title: 'contact',
-			href: 'https://linkedin.com/in/marttinsangelica',
+			ref: 'https://linkedin.com/in/marttinsangelica',
 		},
 	]
 
-	const classNameMobile = {
-		list: 'op-link__list-m',
-		item: 'op-link__list-m__item',
-		link: 'op-link__list-m__link',
-		contact: 'op-link__list-m__link op-link__list-m__link--contact',
+	const className = {
+		list: 'op-l__list',
+		item: 'op-l__list__item',
+		link: 'op-l__list__link',
+		contact: 'contact',
 	}
 
 	return (
@@ -42,8 +42,8 @@ const MenuMobile = (props) => {
 
 				<div className='menu-mobile__nav--box'>
 					<OptionsLink
-						className={classNameMobile}
-						href={arrayItem}
+						className={className}
+						href={itens}
 						target='_blank'
 						rel='external'
 					/>
