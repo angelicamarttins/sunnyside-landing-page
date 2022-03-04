@@ -2,7 +2,7 @@
 
 .title-container {
 	position: absolute;
-	top: 20%;
+	top: 25%;
 	right: 0;
 	left: 0;
 	z-index: 1;
@@ -12,24 +12,91 @@
 		max-width: 100%;
 		text-align: center;
 		z-index: 2;
-		padding-bottom: 1.5em;
+		padding-bottom: 8rem;
 		font: {
 			weight: bolder;
-			size: clamp(1rem, 5vw, 10rem);
-			family: 'Fraunces', serif;
+			size: clamp(3vw, 6vw, 8vw);
+			family: $titleFont;
 		}
 		letter-spacing: 6px;
 		color: $white;
 		text-transform: uppercase;
-
 		color: $white;
 	}
 
 	&__arrow-down {
 		max-width: 100%;
 		display: block;
-		margin: auto;
+		margin: 2rem auto;
 		z-index: 3;
-		height: clamp(5vw, 12vw, 18vw);
+		height: clamp(10vw, 12vw, 14vw);
+	}
+}
+
+@media (min-width: 500px) {
+	.title-container {
+		&__title {
+			padding-bottom: 12rem;
+		}
+	}
+}
+
+@media (min-width: 600px) {
+	.title-container {
+		top: 25%;
+
+		&__title {
+			padding-bottom: 15rem;
+		}
+	}
+}
+
+@media (min-width: 750px) {
+	.title-container {
+		top: 10%;
+
+		&__title {
+			padding-bottom: 3rem;
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+	.title-container {
+		top: 15%;
+
+		&__title {
+			padding-bottom: 1rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.title-container {
+		top: 10%;
+
+		&__title {
+			padding-bottom: 4rem;
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	.title-container {
+		// top: 10%;
+
+		&__title {
+			padding-bottom: 10rem;
+		}
+	}
+}
+
+@media (min-width: 2000px) {
+	.title-container {
+		top: 15%;
+		
+		&__title {
+			padding-bottom: 10rem;
+		}
 	}
 }

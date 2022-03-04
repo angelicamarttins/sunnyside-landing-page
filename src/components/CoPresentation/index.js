@@ -14,7 +14,7 @@ const CoPresentation = () => {
 				src={EggDesktop}
 				srcSet={EggMobile}
 				alt=''
-				media='(max-width: 1440px)'
+				media='(max-width: 749px)'
 				type='image/jpg'
 				color='yellow'
 				title='Transform your brand'

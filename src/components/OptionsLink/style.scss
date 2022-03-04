@@ -2,21 +2,35 @@
 
 .op-l {
 	&__list {
-		list-style-type: none;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		&--desktop {
+			list-style-type: none;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&--mobile {
+			list-style-type: none;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-direction: column;
+			padding: 1rem;
+		}
+
+		&__item {
+			margin: 0.5rem;
+		}
 
 		&__link {
 			text-decoration: none;
 			text-transform: capitalize;
 			letter-spacing: 0;
-			margin: 0 0.5rem;
-			padding: 1.5rem;
+			padding: 0.25rem;
 			cursor: pointer;
 			font: {
 				family: $textFont;
-				size: clamp(1vw, 1.15vw, 1.5vw);
+				size: clamp(2.5vw, 3vw, 3.5vw);
 			}
 		}
 	}
@@ -41,7 +55,7 @@
 .footer-op-link {
 	color: $footerText;
 
-	&:hover{
+	&:hover {
 		color: $white;
 	}
 }
@@ -53,13 +67,13 @@
 		weight: 900;
 	}
 	border-radius: 30px;
-	padding: 1.05rem 1.5rem;
 
 	&--desktop {
 		background-color: $white;
 		color: $mainTitleNameTesti;
 		font-weight: 900;
-
+		padding: 1.05rem 1.5rem;
+		
 		&:hover {
 			background-color: $whiteHover;
 			color: $white;
@@ -70,7 +84,8 @@
 		background-color: $yellow;
 		color: $mainTitleNameTesti;
 		font-weight: 900;
-
+		padding: clamp(1.5vw, 2vw, 3vw);
+		
 		&:hover {
 			color: $white;
 		}

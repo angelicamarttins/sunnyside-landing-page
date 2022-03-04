@@ -36,7 +36,7 @@ const MenuMobile = () => {
 	return (
 		<div className='menu-mobile'>
 			<div className='menu-mobile__nav'>
-				<Logo src={WhiteLogo} />
+				<Logo src={WhiteLogo} alt='' />
 
 				<img className='menu-mobile__nav--hamb' src={Hamburger} alt='' />
 
@@ -46,6 +46,7 @@ const MenuMobile = () => {
 						href={itens}
 						target='_blank'
 						rel='external'
+						mofidier='mobile'
 					/>
 				</div>
 			</div>

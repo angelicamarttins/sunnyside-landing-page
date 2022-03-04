@@ -1,17 +1,17 @@
 import './style.scss'
 
 import CoPresentation from '../../components/CoPresentation'
-import Services from '../../components/Services'
-import Testimonials from '../../components/Testimonials'
-import Gallery from '../../components/Gallery'
+// import Services from '../../components/Services'
+// import Testimonials from '../../components/Testimonials'
+// import Gallery from '../../components/Gallery'
 
 const Main = () => {
 	return (
 		<main className='main'>
 			<CoPresentation />
-			<Services />
-			<Testimonials />
-			<Gallery />
+			{/* <Services /> */}
+			{/* <Testimonials />
+			<Gallery /> */}
 		</main>
 	)
 }

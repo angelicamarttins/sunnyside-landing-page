@@ -1,44 +1,56 @@
-@import "../../assets/styles/variables";
+@import '../../assets/styles/variables';
 
 .co-presentations {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(2, 1fr);
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 1fr);
+  
+	&__text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: $white;
 
-  &__text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: $white;
+		&--size {
+			width: 60%;
+			margin-bottom: 3rem;
+		}
 
-    &--size{
-      width: 60%;
-    }
+		&__title {
+			margin: 2rem 0;
+			font: {
+				family: $titleFont;
+				size: 2rem;
+				weight: 900;
+			}
+			letter-spacing: -2px;
+			color: $mainTitleNameTesti;
+		}
 
-    &__title {
-      margin: 2rem 0;
-      font: {
-        family: $titleFont;
-        size: 2rem;
-        weight: 900;
-      }
-      letter-spacing: -2px;
-      color: $mainTitleNameTesti;
-    }
-
-    &__p {
-      margin: 2rem 0;
-      font: {
-        family: $textFont;
-      }
-      color: $testimonialTitle;
-      line-height: 30px;
-    }
-  }
+		&__p {
+			margin: 2rem 0;
+			font: {
+				family: $textFont;
+			}
+			color: $testimonialTitle;
+			line-height: 30px;
+		}
+	}
 }
 
-.co-presentations:nth-child(2n + 2) > div:first-child {
-  grid-column: 2;
-  grid-row: 1;
+.co-presentations:nth-child(1n + 1) > div:first-child {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+@media (min-width: 750px) {
+  .co-presentations {
+    grid-template-rows: 1fr;
+		grid-template-columns: repeat(2, 1fr);
+	}
+  .co-presentations:nth-child(2n + 2) > div:first-child {
+    grid-column: 2;
+    grid-row: 1;
+  }
 }

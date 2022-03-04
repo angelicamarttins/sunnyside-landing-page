@@ -1,23 +1,28 @@
 @import '../../assets/styles/variables';
 
 .menu-mobile {
+	max-width: 100%;
+
 	&__nav {
+		max-width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin: 1.5rem;
+		padding: 1.5rem;
+		background-color: $bgMenu;
 
 		&--box {
 			position: absolute;
 			left: 0;
 			right: 0;
 			top: 13%;
-			//display: none;
+			display: none;
 			width: 90%;
 			max-width: 450px;
 			margin: auto;
 			padding: 2.5rem;
 			background-color: $white;
+			z-index: 3;
 		}
 	}
 }

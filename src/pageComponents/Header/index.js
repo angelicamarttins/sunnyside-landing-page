@@ -19,7 +19,7 @@ const Header = () => {
 					src={HeaderDesktop}
 					srcSet={HeaderMobile}
 					alt=''
-					media='(max-width: 1440px)'
+					media='(max-width: 749px)'
 					type='image/jpg'
 				/>
 				<TitleContainer src={ArrowDown}>we are creatives</TitleContainer>
