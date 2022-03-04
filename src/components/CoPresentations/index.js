@@ -10,7 +10,7 @@ const CoPresentations = ({
 	alt,
 	type,
 	title,
-	text,
+	children,
 	color,
 	href,
 	target,
@@ -21,7 +21,7 @@ const CoPresentations = ({
 			<div className='co-presentations__text'>
 				<div className='co-presentations__text--size'>
 					<h2 className='co-presentations__text__title'>{title}</h2>
-					<p className='co-presentations__text__p'>{text}</p>
+					<p className='co-presentations__text__p'>{children}</p>
 					<LearnMore color={color} href={href} target={target} rel={rel} />
 				</div>
 			</div>

@@ -49,6 +49,11 @@
     grid-template-rows: 1fr;
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+	.co-presentations:nth-child(1n + 1) > div:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
   .co-presentations:nth-child(2n + 2) > div:first-child {
     grid-column: 2;
     grid-row: 1;

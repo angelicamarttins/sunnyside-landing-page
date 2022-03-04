@@ -18,19 +18,25 @@ const CoPresentation = () => {
 				type='image/jpg'
 				color='yellow'
 				title='Transform your brand'
-				text='We are a full-service creative agency specializing in helping brands grow fast. 
-            Engage your clients through compelling visuals that do most of the marketing for you.'
-			/>
+			>
+				We are a full-service creative agency specializing in helping brands
+				grow fast. Engage your clients through compelling visuals that do most
+				of the marketing for you.
+			</CoPresentations>
+
 			<CoPresentations
 				src={OrangeCupDesktop}
 				srcSet={OrangeCupMobile}
 				alt=''
-				media='(max-width: 1440px)'
+				media='(max-width: 749px)'
 				type='image/jpg'
 				color='red'
 				title='Stand out to the right audience'
-				text='Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.'
-			/>
+			>
+				Using a collaborative formula of designers, researchers, photographers,
+				videographers, and copywriters, we’ll build and extend your brand in
+				digital places.
+			</CoPresentations>
 		</section>
 	)
 }

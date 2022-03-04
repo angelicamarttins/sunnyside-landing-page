@@ -1,6 +1,8 @@
 @import '../../assets/styles/variables';
 
 .header {
+	height: 100vh;
+
 	&__title {
 		height: 100%;
 		margin-bottom: -5px;
