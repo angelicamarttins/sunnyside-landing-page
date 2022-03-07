@@ -1,7 +1,7 @@
 import './style.scss'
 
 import CoPresentation from '../../components/CoPresentation'
-// import Services from '../../components/Services'
+import Services from '../../components/Services'
 // import Testimonials from '../../components/Testimonials'
 // import Gallery from '../../components/Gallery'
 
@@ -9,7 +9,7 @@ const Main = () => {
 	return (
 		<main className='main'>
 			<CoPresentation />
-			{/* <Services /> */}
+			<Services />
 			{/* <Testimonials />
 			<Gallery /> */}
 		</main>

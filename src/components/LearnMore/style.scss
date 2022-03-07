@@ -1,42 +1,62 @@
 @import '../../assets/styles/variables.scss';
 
-@mixin borderHoverColor($colorBorder, $colorHover) {
-  position: relative;
-  z-index: 2;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $mainTitleNameTesti;
-  cursor: pointer;
+.learn-more {
+	position: relative;
+	z-index: 2;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $mainTitleNameTesti;
+	cursor: pointer;
 
-  font: {
-    family: $titleFont;
-    weight: 900;
-  }
-  
-  &::before {
-    content: "";
-    position: absolute;
-    top: 65%;
-    left: -6%;
-    width: 115%;
-    height: 0.7rem;
-    background: $colorBorder;
-    z-index: -1;
-    border-radius: 8px;
-    transition: 0.35s;
-  }
+	font: {
+		family: $titleFont;
+		size: 4vw;
+		weight: 900;
+	}
 
-	&:hover::before {
-		background: $colorHover;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 65%;
+		left: -6%;
+		width: 115%;
+		height: 2.5vw;
+		z-index: -1;
+		border-radius: 8px;
+		transition: 0.35s;
+	}
+
+	&--red {
+		&::before {
+			background: $redBorder;
+		}
+		&:hover::before {
+			background-color: $redHover;
+		}
+	}
+
+	&--yellow {
+		&::before {
+			background: $yellowHover;
+		}
+		&:hover::before {
+			background-color: $yellow;
+		}
 	}
 }
 
-.learn-more {
-  &--red {
-    @include borderHoverColor($redBorder, $redHover);
-  }
+@media (min-width: 750px) {
+	.learn-more {
+		&::before {
+			height: 0.9vw;
+		}
 
-  &--yellow {
-    @include borderHoverColor($yellowHover, $yellow);
-  }
+		&--red {
+			font-size: 1.25vw;
+		}
+
+		&--yellow {
+			font-size: 1.25vw;
+		}
+	}
 }

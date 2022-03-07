@@ -4,7 +4,7 @@ const LearnMore = ({ color, href, target, rel }) => {
 	return (
 		<div className='learn-more'>
 			<a
-				className={`learn-more--${color}`}
+				className={`learn-more learn-more--${color}`}
 				href={href}
 				target={target}
 				rel={rel}

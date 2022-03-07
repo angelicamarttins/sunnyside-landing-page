@@ -1,45 +1,68 @@
 @import '../../assets/styles/variables';
 
 .service {
-  &__img {
-    position: relative;
-    
-    &__text {
-      max-width: 100%;
-      position: absolute;
-      bottom: calc(100vh - 100%);
-      right: 25%;
-      left: 25%;
-      line-height: 30px;
+	margin-bottom: -5px;
 
-      &__title {
-        text-align: center;
-        font: {
-          family: $titleFont;
-          size: 2rem;
-          weight: 900;
-        }
-        margin-bottom: 2rem;
-      }
+	&__img {
+		position: relative;
 
-      &__txt {
-        text-align: center;
-        font: {
-          family: $textFont;
-          size: 1rem;
-          weight: 700;
-        }
-        margin-top: 1rem;
-      }
-    }
-  }
+		&__text {
+			max-width: 100%;
+			position: absolute;
+			top: 60%;
+			bottom: 25%;
+			right: 5%;
+			left: 5%;
+			line-height: 4vh;
 
-  &--blue {
-    color: $textProto;
-  }
-  
-  &--green {
-    color: $textGraphic;
-  }
+			&__title {
+				text-align: center;
+				font: {
+					family: $titleFont;
+					size: 6vw;
+					weight: 900;
+				}
+				margin-bottom: 2vh;
+			}
+
+			&__txt {
+				text-align: center;
+				font: {
+					family: $textFont;
+					size: 4vw;
+					weight: 700;
+				}
+				margin-top: 1rem;
+			}
+		}
+	}
+
+	&--blue {
+		color: $textPhoto;
+	}
+
+	&--green {
+		color: $textGraphic;
+	}
 }
 
+@media (min-width: 750px) {
+	.service {
+		&__img {
+			&__text {
+				left: 25%;
+				right: 25%;
+				line-height: 2.15vw;
+				
+				&__title {
+					margin-bottom: 1vh;
+					font-size: clamp(2vw, 2.25vw, 2.75vw);
+				}
+
+				&__txt {
+					font-size: clamp(1vw, 1.2vw, 2vw);
+				}
+			}
+		}
+	}
+}

@@ -1,6 +1,7 @@
 @import '../../assets/styles/variables';
 
 .co-presentations {
+	max-height: 100%;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(2, 1fr);
@@ -11,17 +12,17 @@
 		align-items: center;
 		flex-direction: column;
 		background-color: $white;
+		text-align: center;
 
 		&--size {
-			width: 60%;
-			margin-bottom: 3rem;
+			width: 75%;
 		}
 
 		&__title {
-			margin: 2rem 0;
+			margin: 1rem 0;
 			font: {
 				family: $titleFont;
-				size: 2rem;
+				size: 7vw;
 				weight: 900;
 			}
 			letter-spacing: -2px;
@@ -29,12 +30,13 @@
 		}
 
 		&__p {
-			margin: 2rem 0;
+			margin-bottom: 2rem;
 			font: {
 				family: $textFont;
+				size: 3.5vw;
 			}
 			color: $testimonialTitle;
-			line-height: 30px;
+			line-height: 6vw;
 		}
 	}
 }
@@ -48,6 +50,19 @@
   .co-presentations {
     grid-template-rows: 1fr;
 		grid-template-columns: repeat(2, 1fr);
+
+		&__text {
+			text-align: start;
+
+			&__title {
+				font-size: clamp(2vw, 3vw, 4vw);
+			}
+
+			&__p {
+				font-size: clamp(1vw, 1.5vw, 2vw);
+				line-height: 3vw;
+			}
+		}
 	}
 
 	.co-presentations:nth-child(1n + 1) > div:first-child {
@@ -58,4 +73,5 @@
     grid-column: 2;
     grid-row: 1;
   }
+
 }
