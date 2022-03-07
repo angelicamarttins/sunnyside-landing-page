@@ -3,7 +3,7 @@ import './style.scss'
 import CoPresentation from '../../components/CoPresentation'
 import Services from '../../components/Services'
 import Testimonials from '../../components/Testimonials'
-// import Gallery from '../../components/Gallery'
+import Gallery from '../../components/Gallery'
 
 const Main = () => {
 	return (
@@ -11,7 +11,7 @@ const Main = () => {
 			<CoPresentation />
 			<Services />
 			<Testimonials />
-			{/*	<Gallery /> */}
+			<Gallery />
 		</main>
 	)
 }
