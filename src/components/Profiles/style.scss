@@ -1,41 +1,72 @@
 @import '../../assets/styles/variables.scss';
 
 .profiles {
-  max-width: 25%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 20vw;
 
-  &__img {
-    width: 90px;
-    height: 90px;
-    margin: 0 4rem 4rem 4rem;
-    border-radius: 50%;
-  }
+	&__img {
+		width: 50px;
+		height: 50px;
+		margin-bottom: 8vw;
+		border-radius: 50%;
+	}
 
-  &__text {
-    margin-bottom: 4rem;
-    font: {
-      family: $textFont;
-    }
-    line-height: 30px;
-    text-align: center;
-    color: $mainText;
-  }
+	&__text {
+		margin-bottom: 8vw;
+		font: {
+			family: $textFont;
+			size: 4.5vw;
+		}
+		line-height: 6vw;
+		text-align: center;
+		color: $mainText;
+	}
 
-  &__name {
-    margin-bottom: 0.75rem;
-    font: {
-      family: $titleFont;
-      weight: 900;
-    }
-  }
+	&__name {
+		margin-bottom: 2vw;
+		font: {
+			family: $titleFont;
+			size: 5vw;
+			weight: 900;
+		}
+	}
 
-  &__position {
-    font: {
-      family: $textFont;
-    }
-    color: $testimonialPosition;
-  }
+	&__company-position {
+		font: {
+			family: $textFont;
+			size: 3.75vw;
+		}
+		color: $testimonialPosition;
+	}
+}
+
+@media (min-width: 750px) {
+	.profiles {
+		max-width: 25%;
+		margin: 0 2vw;
+
+		&__img {
+      width: 65px;
+      height: 65px;
+			margin-bottom: 3vw;
+		}
+
+		&__text {
+			margin-bottom: 3vw;
+			font-size: 1.2vw;
+			line-height: 2vw;
+		}
+
+		&__name {
+			margin-bottom: 0.75vw;
+			font-size: 1.25vw;
+		}
+
+		&__company-position {
+			font-size: 1vw;
+		}
+	}
 }

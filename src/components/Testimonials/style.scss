@@ -1,13 +1,11 @@
 @import '../../assets/styles/variables';
 
 .testimonials {
-	height: 100vh;
-  
   &__title {
-    padding: 5%;
+    padding: 5vw;
     margin-top: 2rem;
     font: {
-      size: 1.25rem;
+      size: 4vw; 
       family: $titleFont;
     }
     text-align: center;
@@ -18,8 +16,23 @@
 
 	&__profiles {
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
 		align-items: center;
-		padding: 2rem;
+    flex-direction: column;
+    padding: 0 5vw 10vw 5vw;
 	}
+}
+
+@media (min-width: 750px) {
+  .testimonials {
+    &__title {
+      font-size: 1.5vw;
+    }
+
+    &__profiles {
+      justify-content: center;
+      align-items: start;
+      flex-direction: row;
+    }
+  }
 }

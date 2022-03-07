@@ -2,7 +2,7 @@ import './style.scss'
 
 import CoPresentation from '../../components/CoPresentation'
 import Services from '../../components/Services'
-// import Testimonials from '../../components/Testimonials'
+import Testimonials from '../../components/Testimonials'
 // import Gallery from '../../components/Gallery'
 
 const Main = () => {
@@ -10,8 +10,8 @@ const Main = () => {
 		<main className='main'>
 			<CoPresentation />
 			<Services />
-			{/* <Testimonials />
-			<Gallery /> */}
+			<Testimonials />
+			{/*	<Gallery /> */}
 		</main>
 	)
 }
