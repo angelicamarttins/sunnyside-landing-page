@@ -18,29 +18,29 @@ const Gallery = () => {
 				srcSet={MilkBottlesMobile}
 				src={MilkBottlesDesktop}
 				alt=''
-				media='(max-width: 1440px)'
-				type='image-jpg'
+				media='(max-width: 750px)'
+				type='image/jpg'
 			/>
 			<DinamicImg
 				srcSet={OrangeMobile}
 				src={OrangeDesktop}
 				alt=''
-				media='(max-width: 1440px)'
-				type='image-jpg'
+				media='(max-width: 750px)'
+				type='image/jpg'
 			/>
 			<DinamicImg
 				srcSet={ConeMobile}
 				src={ConeDesktop}
 				alt=''
-				media='(max-width: 1440px)'
-				type='image-jpg'
+				media='(max-width: 750px)'
+				type='image/jpg'
 			/>
 			<DinamicImg
 				srcSet={SugarCubesMobile}
 				src={SugarCubesDesktop}
 				alt=''
-				media='(max-width: 1440px)'
-				type='image-jpg'
+				media='(max-width: 750px)'
+				type='image/jpg'
 			/>
 		</section>
 	)
