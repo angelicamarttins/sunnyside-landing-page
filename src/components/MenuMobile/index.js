@@ -38,17 +38,22 @@ const MenuMobile = () => {
 			<div className='menu-mobile__nav'>
 				<Logo src={WhiteLogo} alt='' />
 
-				<img className='menu-mobile__nav--hamb' src={Hamburger} alt='' />
-
-				<div className='menu-mobile__nav--box'>
-					<OptionsLink
-						className={className}
-						href={itens}
-						target='_blank'
-						rel='external'
-						mofidier='mobile'
-					/>
-				</div>
+				<ul className='menu-mobile__nav__list'>
+					<li className='menu-mobile__nav__item'>
+						<img className='hamb' src={Hamburger} alt='' />
+						<ul className='box'>
+							<li>
+								<OptionsLink
+									className={className}
+									href={itens}
+									target='_blank'
+									rel='external'
+									mofidier='mobile'
+								/>
+							</li>
+						</ul>
+					</li>
+				</ul>
 			</div>
 		</div>
 	)
