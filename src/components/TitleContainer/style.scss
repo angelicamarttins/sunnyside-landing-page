@@ -12,7 +12,7 @@
 		max-width: 100%;
 		text-align: center;
 		z-index: 2;
-		padding-bottom: 5vh;
+		padding-bottom: 20vw;
 		font: {
 			weight: bolder;
 			size: clamp(8vw, 10vw, 11vw);
@@ -29,13 +29,22 @@
 		display: block;
 		margin: 2rem auto;
 		z-index: 3;
-		height: 20vh;
+		height: 20vw;
 	}
 }
 
+@media (min-width: 650px) {
+	.title-container {
+		&__title {
+			padding-bottom: 30vw;
+		}
+	}
+}
+
+
 @media (min-width: 750px) {
 	.title-container {
-		top: 10%;
+		top: 30%;
 
 		&__title {
 			font-size: clamp(5vw, 6vw, 7vw);
@@ -43,13 +52,13 @@
 		}
 
 		&__arrow-down {
-			height: 6vw;
+			height: 10vw;
 		}
 	}
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 850px) {
 	.title-container {
-		top: 25%;
+		top: 35%;
 	}
 }

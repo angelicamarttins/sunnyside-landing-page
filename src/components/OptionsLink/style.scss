@@ -32,7 +32,7 @@
 			font: {
 				family: $textFont;
 				weight: 500;
-				size: 3vw;
+				size: clamp(2.5vw, 3.5vw, 4vw);
 			}
 		}
 	}
@@ -74,7 +74,7 @@
 		background-color: $white;
 		color: $mainTitleNameTesti;
 		font-weight: 900;
-		padding: 1.05rem 1.5rem;
+		padding: clamp(1vw, 1.25vw, 1.5vw);
 		
 		&:hover {
 			background-color: $whiteHover;

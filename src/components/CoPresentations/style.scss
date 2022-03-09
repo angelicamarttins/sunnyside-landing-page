@@ -19,7 +19,7 @@
 		}
 
 		&__title {
-			margin: 1rem 0;
+			margin: 1vw 0 5vw 0;
 			font: {
 				family: $titleFont;
 				size: 7vw;
@@ -30,7 +30,7 @@
 		}
 
 		&__p {
-			margin-bottom: 2rem;
+			margin-bottom: 8vw;
 			font: {
 				family: $textFont;
 				size: 3.5vw;
@@ -56,11 +56,13 @@
 
 			&__title {
 				font-size: clamp(2vw, 3vw, 4vw);
+				margin-bottom: 2vw;
 			}
 
 			&__p {
+				margin-bottom: 1vw;
 				font-size: clamp(1vw, 1.5vw, 2vw);
-				line-height: 3vw;
+				line-height: 2.5vw;
 			}
 		}
 	}
