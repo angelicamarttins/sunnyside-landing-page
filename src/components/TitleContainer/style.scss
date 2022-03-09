@@ -44,11 +44,11 @@
 
 @media (min-width: 750px) {
 	.title-container {
-		top: 30%;
+		top: 25%;
 
 		&__title {
 			font-size: clamp(5vw, 6vw, 7vw);
-			padding-bottom: 8vw;
+			padding-bottom: 5vw;
 		}
 
 		&__arrow-down {
