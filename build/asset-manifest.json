@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.829e4977.css",
+    "main.js": "/static/js/main.720c9010.js",
+    "static/media/image-header.jpg": "/static/media/image-header.9167cda0c72b56b2cda5.jpg",
+    "static/media/image-gallery-milkbottles.jpg": "/static/media/image-gallery-milkbottles.df1d9d8460e873924250.jpg",
+    "static/media/image-graphic-design.jpg": "/static/media/image-graphic-design.7ac8bdf0d3df29591a3b.jpg",
+    "static/media/image-photography.jpg": "/static/media/image-photography.104cf40b52f66520afb0.jpg",
+    "static/media/image-gallery-sugarcubes.jpg": "/static/media/image-gallery-sugarcubes.fefc3841f885fca27c53.jpg",
+    "static/media/image-gallery-orange.jpg": "/static/media/image-gallery-orange.373d43f1f42a447ed9a6.jpg",
+    "static/media/image-gallery-cone.jpg": "/static/media/image-gallery-cone.461ff4214c3ac822dfff.jpg",
+    "static/media/logoGreen.svg": "/static/media/logoGreen.af9bbb1649f8c19a58deb906821ec099.svg",
+    "static/media/logoWhite.svg": "/static/media/logoWhite.4271b8992622e4dd1cc7de08466dab06.svg",
+    "static/media/icon-instagram.svg": "/static/media/icon-instagram.7d97118aca6da4dd308fbe5b0ad8b9d6.svg",
+    "static/media/icon-pinterest.svg": "/static/media/icon-pinterest.fd8b84da3f15023f2ae8d359495f43db.svg",
+    "index.html": "/index.html",
+    "static/media/icon-twitter.svg": "/static/media/icon-twitter.23df5d421d6e70c35715be06e375f403.svg",
+    "static/media/icon-facebook.svg": "/static/media/icon-facebook.101bd07e99eaeae8b0f594d4908d92b0.svg",
+    "static/media/icon-arrow-down.svg": "/static/media/icon-arrow-down.979ef07a7cbb07d35f05bbaa093f7489.svg",
+    "static/media/icon-hamburger.svg": "/static/media/icon-hamburger.7764b7eb6060edb45161f8b146f1373c.svg",
+    "main.829e4977.css.map": "/static/css/main.829e4977.css.map",
+    "main.720c9010.js.map": "/static/js/main.720c9010.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.829e4977.css",
+    "static/js/main.720c9010.js"
+  ]
+}
