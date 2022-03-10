@@ -75,7 +75,7 @@
 		color: $mainTitleNameTesti;
 		font-weight: 900;
 		padding: clamp(1vw, 1.25vw, 1.5vw);
-		
+
 		&:hover {
 			background-color: $whiteHover;
 			color: $white;
@@ -87,13 +87,12 @@
 		color: $mainTitleNameTesti;
 		font-weight: 900;
 		padding: clamp(1.5vw, 2vw, 3vw);
-		
+
 		&:hover {
 			color: $white;
 		}
 	}
 }
-
 
 @media (min-width: 750px) {
 	.op-l {

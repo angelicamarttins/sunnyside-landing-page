@@ -5,7 +5,7 @@
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(2, 1fr);
-  
+
 	&__text {
 		display: flex;
 		justify-content: center;
@@ -47,8 +47,8 @@
 }
 
 @media (min-width: 750px) {
-  .co-presentations {
-    grid-template-rows: 1fr;
+	.co-presentations {
+		grid-template-rows: 1fr;
 		grid-template-columns: repeat(2, 1fr);
 
 		&__text {
@@ -68,12 +68,11 @@
 	}
 
 	.co-presentations:nth-child(1n + 1) > div:first-child {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .co-presentations:nth-child(2n + 2) > div:first-child {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.co-presentations:nth-child(2n + 2) > div:first-child {
+		grid-column: 2;
+		grid-row: 1;
+	}
 }

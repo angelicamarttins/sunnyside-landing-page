@@ -1,38 +1,38 @@
 @import '../../assets/styles/variables';
 
 .testimonials {
-  &__title {
-    padding: 5vw;
-    margin-top: 2rem;
-    font: {
-      size: 4vw; 
-      family: $titleFont;
-    }
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: $testimonialTitle;
+	&__title {
+		padding: 5vw;
+		margin-top: 2rem;
+		font: {
+			size: 4vw;
+			family: $titleFont;
+		}
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		color: $testimonialTitle;
 	}
 
 	&__profiles {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-    flex-direction: column;
-    padding: 0 5vw 10vw 5vw;
+		flex-direction: column;
+		padding: 0 5vw 10vw 5vw;
 	}
 }
 
 @media (min-width: 750px) {
-  .testimonials {
-    &__title {
-      font-size: 1.5vw;
-    }
+	.testimonials {
+		&__title {
+			font-size: 1.5vw;
+		}
 
-    &__profiles {
-      justify-content: center;
-      align-items: start;
-      flex-direction: row;
-    }
-  }
+		&__profiles {
+			justify-content: center;
+			align-items: start;
+			flex-direction: row;
+		}
+	}
 }

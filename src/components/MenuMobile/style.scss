@@ -2,7 +2,7 @@
 
 .menu-mobile {
 	max-width: 100%;
-	
+
 	&__nav {
 		max-width: 100%;
 		display: flex;
@@ -10,11 +10,10 @@
 		align-items: center;
 		padding: 1.5rem;
 		background-color: $bgMenu;
-	
+
 		&__list {
 			list-style-type: none;
 		}
-	
 	}
 }
 

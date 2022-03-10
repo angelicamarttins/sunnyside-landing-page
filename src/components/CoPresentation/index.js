@@ -1,5 +1,3 @@
-import './style.scss'
-
 import CoPresentations from '../CoPresentations'
 
 import EggDesktop from '../../assets/images/desktop/image-transform.jpg'

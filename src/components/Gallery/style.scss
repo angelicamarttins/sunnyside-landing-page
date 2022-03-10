@@ -1,9 +1,9 @@
 @import '../../assets/styles/variables';
 
 .gallery {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(2, 1fr);
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 }
 
 @media (min-width: 750px) {
