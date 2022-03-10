@@ -1,5 +1,3 @@
-import './style.scss'
-
 import CoPresentation from '../../components/CoPresentation'
 import Services from '../../components/Services'
 import Testimonials from '../../components/Testimonials'
