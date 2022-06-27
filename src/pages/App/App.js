@@ -1,6 +1,6 @@
+import Footer from '../../pageComponents/Footer'
 import Header from '../../pageComponents/Header'
 import Main from '../../pageComponents/Main'
-import Footer from '../../pageComponents/Footer'
 
 const App = () => {
 	return (
