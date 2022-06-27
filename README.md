@@ -49,8 +49,8 @@ At the end, the project should be like:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Git repository](https://github.com/angelicamarttins/sunnyside-landing-page)
+- Live Site URL: [Site deployed in Netlify](https://snnysd-agency.netlify.app/)
 
 ## My process
 
@@ -58,6 +58,7 @@ At the end, the project should be like:
 
 - JSX
 - CSS custom properties
+- SCSS
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
