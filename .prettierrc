@@ -3,7 +3,7 @@
 	"trailingComma": "es5",
 	"bracketSpacing": true,
 	"jsxSingleQuote": true,
-	"endOfLine": "crlf",
+	"endOfLine": "lf",
 	"useTabs": true,
 	"tabWidth": 2,
 	"semi": false
